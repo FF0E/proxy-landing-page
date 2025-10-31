@@ -1,0 +1,266 @@
+{
+  "config": {
+    "site": {
+      "name": "SecureNet",
+      "url": "https://example.com",
+      "description": "军用级加密技术，畅享无界网络世界"
+    },
+    "links": {
+      "download": "https://example.com/download",
+      "demo": "https://example.com/demo",
+      "login": "https://example.com/login",
+      "signup": "https://example.com/signup",
+      "pricing": "https://example.com/pricing",
+      "contact": "https://example.com/contact",
+      "support": "https://example.com/support",
+      "blog": "https://example.com/blog",
+      "privacy": "https://example.com/privacy",
+      "terms": "https://example.com/terms",
+      "security": "https://example.com/security"
+    },
+    "pricing": {
+      "currency": "¥",
+      "period": "/月",
+      "plans": {
+        "basic": {
+          "name": "基础版",
+          "description": "个人用户的理想选择",
+          "price": "69",
+          "badge": "",
+          "buttonText": "立即开始",
+          "buttonLink": "https://example.com/signup?plan=basic",
+          "features": [
+            "connections",
+            "servers",
+            "encryption",
+            "support",
+            "guarantee",
+            "nologs"
+          ]
+        },
+        "pro": {
+          "name": "专业版",
+          "description": "高级用户的首选方案",
+          "price": "139",
+          "badge": "最受欢迎",
+          "buttonText": "免费试用",
+          "buttonLink": "https://example.com/signup?plan=pro&trial=true",
+          "features": [
+            "connections_pro",
+            "servers_pro",
+            "encryption_pro",
+            "support_pro",
+            "guarantee",
+            "nologs",
+            "adblocker",
+            "bandwidth",
+            "tunneling"
+          ]
+        },
+        "enterprise": {
+          "name": "企业版",
+          "description": "团队协作的完美解决方案",
+          "price": "349",
+          "badge": "",
+          "buttonText": "联系销售",
+          "buttonLink": "https://example.com/contact?plan=enterprise",
+          "features": [
+            "connections_enterprise",
+            "servers_enterprise",
+            "encryption_enterprise",
+            "support_enterprise",
+            "guarantee",
+            "nologs",
+            "adblocker",
+            "bandwidth",
+            "tunneling",
+            "dashboard",
+            "sso",
+            "api"
+          ]
+        }
+      }
+    },
+    "navigation": [
+      {
+        "name": "产品特色",
+        "href": "#features"
+      },
+      {
+        "name": "套餐价格",
+        "href": "#pricing"
+      },
+      {
+        "name": "关于我们",
+        "href": "#about"
+      }
+    ],
+    "cta": {
+      "primaryButton": {
+        "text": "免费试用",
+        "link": "https://example.com/signup?trial=true"
+      },
+      "secondaryButton": {
+        "text": "查看套餐",
+        "link": "https://example.com/pricing"
+      }
+    },
+    "footer": {
+      "sections": {
+        "product": {
+          "features": "#features",
+          "pricing": "#pricing",
+          "download": "https://example.com/download"
+        },
+        "company": {
+          "about": "#about",
+          "blog": "https://example.com/blog",
+          "contact": "https://example.com/contact"
+        },
+        "legal": {
+          "privacy": "https://example.com/privacy",
+          "terms": "https://example.com/terms",
+          "security": "https://example.com/security"
+        }
+      }
+    },
+    "analytics": {
+      "enabled": false
+    }
+  },
+  "translations": {
+    "common": {
+      "buttons": {
+        "signIn": "登录",
+        "getStarted": "立即体验",
+        "downloadNow": "立即下载",
+        "viewDemo": "观看演示",
+        "startFreeTrial": "免费试用",
+        "viewPricing": "查看套餐"
+      }
+    },
+    "pages": {
+      "hero": {
+        "headline": "高速专线网络 连接您与世界",
+        "description": "军用级加密技术，畅享高速网络",
+        "guarantee": "低价套餐 - 尊享服务",
+        "downloadDescription": "下载SecureNet应用，开启安全上网之旅",
+        "demoDescription": "体验SecureNet强大功能"
+      },
+      "features": {
+        "heading": "企业级安全防护，普通用户也能享用",
+        "description": "采用前沿科技守护您的网络隐私，专为安全和速度而生。",
+        "items": {
+          "encryption": {
+            "title": "军用级加密防护",
+            "description": "AES-256加密技术全方位保护您的数据安全，抵御网络威胁和恶意窥探，让每一次连接都如银行级别安全可靠。"
+          },
+          "speed": {
+            "title": "极速稳定连接",
+            "description": "优化的全球服务器网络确保高速稳定的网络体验，安全与速度兼得。"
+          },
+          "network": {
+            "title": "全球服务器覆盖",
+            "description": "遍布全球的高质量服务器基础设施，让您随时随地畅游网络世界。"
+          },
+          "privacy": {
+            "title": "严格零日志政策",
+            "description": "我们承诺绝不追踪、记录或分享您的任何个人数据和网络行为。"
+          },
+          "bandwidth": {
+            "title": "无限流量使用",
+            "description": "畅享无限流量，尽情观看视频、下载文件、浏览网页，没有任何限制。"
+          },
+          "anonymity": {
+            "title": "匿名安全浏览",
+            "description": "完美隐藏您的真实IP地址，实现真正的匿名上网体验。"
+          }
+        }
+      },
+      "pricing": {
+        "heading": "选择适合您的套餐",
+        "description": "精心设计的三种套餐，满足不同用户的安全需求。所有套餐都包含核心安全功能，使用限制因套餐而异。",
+        "features": {
+          "connections": "支持5台设备同时在线",
+          "connections_pro": "支持10台设备同时在线",
+          "connections_enterprise": "支持无限台设备",
+          "servers": "50+个精选服务器位置",
+          "servers_pro": "150+个全球服务器位置",
+          "servers_enterprise": "150+个全球服务器位置",
+          "encryption": "基础加密保护(AES-128)",
+          "encryption_pro": "军用级加密防护(AES-256)",
+          "encryption_enterprise": "军用级加密防护(AES-256)",
+          "support": "7×24小时在线客服",
+          "support_pro": "7×24小时优先客服支持",
+          "support_enterprise": "专属客户成功经理",
+          "guarantee": "30天无忧退款保障",
+          "nologs": "严格零日志政策",
+          "adblocker": "智能广告拦截",
+          "bandwidth": "无限流量畅用",
+          "tunneling": "智能分流技术",
+          "dashboard": "团队管理控制台",
+          "sso": "企业级SSO集成",
+          "api": "开发者API接口"
+        }
+      },
+      "cta": {
+        "heading": "准备好开启安全上网之旅了吗？",
+        "description": "加入全球数百万用户的行列，选择SecureNet守护您的网络隐私与安全。"
+      },
+      "footer": {
+        "brandDescription": "您值得信赖的网络安全与隐私保护专家。",
+        "sections": {
+          "product": {
+            "title": "产品",
+            "links": {
+              "features": "产品特色",
+              "pricing": "套餐价格",
+              "download": "下载应用"
+            }
+          },
+          "company": {
+            "title": "公司",
+            "links": {
+              "aboutUs": "关于我们",
+              "blog": "官方博客",
+              "contact": "联系我们"
+            }
+          },
+          "legal": {
+            "title": "法律条款",
+            "links": {
+              "privacyPolicy": "隐私政策",
+              "termsOfService": "服务条款",
+              "security": "安全说明"
+            }
+          }
+        },
+        "copyright": "© 2025 SecureNet. 版权所有。"
+      },
+      "stats": {
+        "items": {
+          "servers": {
+            "value": "150+",
+            "label": "全球服务器",
+            "description": "覆盖全球60个国家"
+          },
+          "uptime": {
+            "value": "99.9%",
+            "label": "稳定运行时间",
+            "description": "持续可靠的服务保障"
+          },
+          "speed": {
+            "value": "10Gbps",
+            "label": "极速连接",
+            "description": "光纤级网络体验"
+          },
+          "users": {
+            "value": "500万+",
+            "label": "活跃用户",
+            "description": "选择信赖我们的用户"
+          }
+        }
+      }
+    }
+  }
+}
