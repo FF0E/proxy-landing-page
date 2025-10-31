@@ -1,0 +1,227 @@
+{
+  "config": {
+    "site": {
+      "name": "SecureNet",
+      "url": "https://securenet.example.com",
+      "description": "Experience unrestricted internet access with military-grade encryption"
+    },
+    "links": {
+      "download": "https://example.com/download",
+      "demo": "https://example.com/demo",
+      "login": "https://example.com/login",
+      "signup": "https://example.com/signup",
+      "pricing": "https://example.com/pricing",
+      "contact": "https://example.com/contact",
+      "support": "https://example.com/support",
+      "blog": "https://example.com/blog",
+      "privacy": "https://example.com/privacy",
+      "terms": "https://example.com/terms",
+      "security": "https://example.com/security"
+    },
+    "pricing": {
+      "currency": "$",
+      "period": "/month",
+      "plans": {
+        "basic": {
+          "name": "Basic",
+          "description": "Perfect for casual users",
+          "price": "9.99",
+          "badge": "",
+          "buttonText": "Get Started",
+          "buttonLink": "https://example.com/signup?plan=basic",
+          "features": ["connections", "servers", "encryption", "support", "guarantee", "nologs"]
+        },
+        "pro": {
+          "name": "Pro",
+          "description": "Most popular for power users",
+          "price": "19.99",
+          "badge": "Most Popular",
+          "buttonText": "Start Free Trial",
+          "buttonLink": "https://example.com/signup?plan=pro&trial=true",
+          "features": ["connections_pro", "servers_pro", "encryption_pro", "support_pro", "guarantee", "nologs", "adblocker", "bandwidth", "tunneling"]
+        },
+        "enterprise": {
+          "name": "Enterprise",
+          "description": "Advanced features for teams",
+          "price": "49.99",
+          "badge": "",
+          "buttonText": "Contact Sales",
+          "buttonLink": "https://example.com/contact?plan=enterprise",
+          "features": ["connections_enterprise", "servers_enterprise", "encryption_enterprise", "support_enterprise", "guarantee", "nologs", "adblocker", "bandwidth", "tunneling", "dashboard", "sso", "api"]
+        }
+      }
+    },
+    "navigation": [
+      { "name": "Features", "href": "#features" },
+      { "name": "Pricing", "href": "#pricing" },
+      { "name": "About", "href": "#about" }
+    ],
+    "cta": {
+      "primaryButton": {
+        "text": "Start Free Trial",
+        "link": "https://example.com/signup?trial=true"
+      },
+      "secondaryButton": {
+        "text": "View Pricing",
+        "link": "https://example.com/pricing"
+      }
+    },
+    "footer": {
+      "sections": {
+        "product": {
+          "features": "#features",
+          "pricing": "#pricing",
+          "download": "https://example.com/download"
+        },
+        "company": {
+          "about": "#about",
+          "blog": "https://example.com/blog",
+          "contact": "https://example.com/contact"
+        },
+        "legal": {
+          "privacy": "https://example.com/privacy",
+          "terms": "https://example.com/terms",
+          "security": "https://example.com/security"
+        }
+      }
+    },
+    "analytics": {
+      "enabled": false
+    }
+  },
+  "translations": {
+    "common": {
+      "buttons": {
+        "signIn": "Sign In",
+        "getStarted": "Get Started",
+        "downloadNow": "Download Now",
+        "viewDemo": "View Demo",
+        "startFreeTrial": "Start Free Trial",
+        "viewPricing": "View Pricing"
+      }
+    },
+    "pages": {
+      "hero": {
+        "headline": "Secure your digital freedom.",
+        "description": "Experience unrestricted internet access with military-grade encryption",
+        "guarantee": "No credit card required • 30-day money-back guarantee",
+        "downloadDescription": "Download the SecureNet application to get started",
+        "demoDescription": "View a demonstration of SecureNet features"
+      },
+      "features": {
+        "heading": "Enterprise-grade security for everyone.",
+        "description": "Protect your online presence with cutting-edge technology designed for privacy and performance.",
+        "items": {
+          "encryption": {
+            "title": "Military-Grade Encryption",
+            "description": "AES-256 encryption protects your data from prying eyes and cyber threats. Bank-level security for every connection."
+          },
+          "speed": {
+            "title": "Lightning Fast",
+            "description": "Optimized servers deliver blazing speeds without compromising security."
+          },
+          "network": {
+            "title": "Global Network",
+            "description": "Access content from anywhere with our worldwide server infrastructure."
+          },
+          "privacy": {
+            "title": "Zero-Log Policy",
+            "description": "We never track, collect, or share your private data."
+          },
+          "bandwidth": {
+            "title": "Unlimited Bandwidth",
+            "description": "Stream, download, and browse without restrictions."
+          },
+          "anonymity": {
+            "title": "Anonymous Browsing",
+            "description": "Hide your IP address for complete online anonymity."
+          }
+        }
+      },
+      "pricing": {
+        "heading": "Choose your plan",
+        "description": "Select the perfect plan for your security needs. All plans include our core features with different usage limits.",
+        "features": {
+          "connections": "5 simultaneous connections",
+          "connections_pro": "10 simultaneous connections",
+          "connections_enterprise": "Unlimited connections",
+          "servers": "50+ server locations",
+          "servers_pro": "150+ server locations",
+          "servers_enterprise": "150+ server locations",
+          "encryption": "Basic encryption (AES-128)",
+          "encryption_pro": "Military-grade encryption (AES-256)",
+          "encryption_enterprise": "Military-grade encryption (AES-256)",
+          "support": "24/7 customer support",
+          "support_pro": "Priority 24/7 support",
+          "support_enterprise": "Dedicated account manager",
+          "guarantee": "30-day money-back guarantee",
+          "nologs": "No-logs policy",
+          "adblocker": "Ad blocker included",
+          "bandwidth": "Unlimited bandwidth",
+          "tunneling": "Split tunneling",
+          "dashboard": "Team management dashboard",
+          "sso": "SSO integration",
+          "api": "API access"
+        }
+      },
+      "cta": {
+        "heading": "Ready to secure your connection?",
+        "description": "Join millions of users who trust SecureNet for their online privacy and security."
+      },
+      "footer": {
+        "brandDescription": "Your trusted partner for secure and private internet access.",
+        "sections": {
+          "product": {
+            "title": "Product",
+            "links": {
+              "features": "Features",
+              "pricing": "Pricing",
+              "download": "Download"
+            }
+          },
+          "company": {
+            "title": "Company",
+            "links": {
+              "aboutUs": "About Us",
+              "blog": "Blog",
+              "contact": "Contact"
+            }
+          },
+          "legal": {
+            "title": "Legal",
+            "links": {
+              "privacyPolicy": "Privacy Policy",
+              "termsOfService": "Terms of Service",
+              "security": "Security"
+            }
+          }
+        },
+        "copyright": "© 2025 SecureNet. All rights reserved."
+      },
+      "stats": {
+        "items": {
+          "servers": {
+            "value": "150+",
+            "label": "Global Servers",
+            "description": "Across 60 countries"
+          },
+          "uptime": {
+            "value": "99.9%",
+            "label": "Uptime",
+            "description": "Guaranteed reliability"
+          },
+          "speed": {
+            "value": "10Gbps",
+            "label": "Speed",
+            "description": "Ultra-fast connections"
+          },
+          "users": {
+            "value": "5M+",
+            "label": "Users",
+            "description": "Trust our service"
+          }
+        }
+      }
+    }
+  }
+}
