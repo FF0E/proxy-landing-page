@@ -2,21 +2,21 @@
   "config": {
     "site": {
       "name": "SecureNet",
-      "url": "https://securenet.example.com",
+      "url": "https://www.xrista.net",
       "description": "Experience unrestricted internet access with military-grade encryption"
     },
     "links": {
-      "download": "https://example.com/download",
-      "demo": "https://example.com/demo",
-      "login": "https://example.com/login",
-      "signup": "https://example.com/signup",
-      "pricing": "https://example.com/pricing",
-      "contact": "https://example.com/contact",
-      "support": "https://example.com/support",
-      "blog": "https://example.com/blog",
-      "privacy": "https://example.com/privacy",
-      "terms": "https://example.com/terms",
-      "security": "https://example.com/security"
+      "download": "https://user.xrista.net",
+      "demo": "https://user.xrista.net",
+      "login": "https://user.xrista.net",
+      "signup": "https://user.xrista.net",
+      "pricing": "https://user.xrista.net",
+      "contact": "https://user.xrista.net",
+      "support": "https://user.xrista.net",
+      "blog": "https://user.xrista.net",
+      "privacy": "https://user.xrista.net",
+      "terms": "https://user.xrista.net",
+      "security": "https://user.xrista.net"
     },
     "pricing": {
       "currency": "$",
@@ -28,7 +28,7 @@
           "price": "9.99",
           "badge": "",
           "buttonText": "Get Started",
-          "buttonLink": "https://example.com/signup?plan=basic",
+          "buttonLink": "https://user.xrista.net",
           "features": ["connections", "servers", "encryption", "support", "guarantee", "nologs"]
         },
         "pro": {
@@ -37,7 +37,7 @@
           "price": "19.99",
           "badge": "Most Popular",
           "buttonText": "Start Free Trial",
-          "buttonLink": "https://example.com/signup?plan=pro&trial=true",
+          "buttonLink": "https://user.xrista.net",
           "features": ["connections_pro", "servers_pro", "encryption_pro", "support_pro", "guarantee", "nologs", "adblocker", "bandwidth", "tunneling"]
         },
         "enterprise": {
@@ -46,7 +46,7 @@
           "price": "49.99",
           "badge": "",
           "buttonText": "Contact Sales",
-          "buttonLink": "https://example.com/contact?plan=enterprise",
+          "buttonLink": "https://user.xrista.net",
           "features": ["connections_enterprise", "servers_enterprise", "encryption_enterprise", "support_enterprise", "guarantee", "nologs", "adblocker", "bandwidth", "tunneling", "dashboard", "sso", "api"]
         }
       }
@@ -59,11 +59,11 @@
     "cta": {
       "primaryButton": {
         "text": "Start Free Trial",
-        "link": "https://example.com/signup?trial=true"
+        "link": "https://user.xrista.net"
       },
       "secondaryButton": {
         "text": "View Pricing",
-        "link": "https://example.com/pricing"
+        "link": "https://user.xrista.net"
       }
     },
     "footer": {
@@ -71,17 +71,17 @@
         "product": {
           "features": "#features",
           "pricing": "#pricing",
-          "download": "https://example.com/download"
+          "download": "https://user.xrista.net"
         },
         "company": {
           "about": "#about",
-          "blog": "https://example.com/blog",
-          "contact": "https://example.com/contact"
+          "blog": "https://user.xrista.net",
+          "contact": "https://user.xrista.net"
         },
         "legal": {
-          "privacy": "https://example.com/privacy",
-          "terms": "https://example.com/terms",
-          "security": "https://example.com/security"
+          "privacy": "https://user.xrista.net",
+          "terms": "https://user.xrista.net",
+          "security": "https://user.xrista.net"
         }
       }
     },

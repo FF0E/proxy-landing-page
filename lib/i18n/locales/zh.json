@@ -2,21 +2,21 @@
   "config": {
     "site": {
       "name": "SecureNet",
-      "url": "https://example.com",
+      "url": "https://www.xrista.net",
       "description": "军用级加密技术，畅享无界网络世界"
     },
     "links": {
-      "download": "https://example.com/download",
-      "demo": "https://example.com/demo",
-      "login": "https://example.com/login",
-      "signup": "https://example.com/signup",
-      "pricing": "https://example.com/pricing",
-      "contact": "https://example.com/contact",
-      "support": "https://example.com/support",
-      "blog": "https://example.com/blog",
-      "privacy": "https://example.com/privacy",
-      "terms": "https://example.com/terms",
-      "security": "https://example.com/security"
+      "download": "https://user.xrista.net",
+      "demo": "https://user.xrista.net",
+      "login": "https://user.xrista.net",
+      "signup": "https://user.xrista.net",
+      "pricing": "https://user.xrista.net",
+      "contact": "https://user.xrista.net",
+      "support": "https://user.xrista.net",
+      "blog": "https://user.xrista.net",
+      "privacy": "https://user.xrista.net",
+      "terms": "https://user.xrista.net",
+      "security": "https://user.xrista.net"
     },
     "pricing": {
       "currency": "¥",
@@ -28,7 +28,7 @@
           "price": "69",
           "badge": "",
           "buttonText": "立即开始",
-          "buttonLink": "https://example.com/signup?plan=basic",
+          "buttonLink": "https://user.xrista.net",
           "features": [
             "connections",
             "servers",
@@ -44,7 +44,7 @@
           "price": "139",
           "badge": "最受欢迎",
           "buttonText": "免费试用",
-          "buttonLink": "https://example.com/signup?plan=pro&trial=true",
+          "buttonLink": "https://user.xrista.net",
           "features": [
             "connections_pro",
             "servers_pro",
@@ -63,7 +63,7 @@
           "price": "349",
           "badge": "",
           "buttonText": "联系销售",
-          "buttonLink": "https://example.com/contact?plan=enterprise",
+          "buttonLink": "https://user.xrista.net",
           "features": [
             "connections_enterprise",
             "servers_enterprise",
@@ -98,11 +98,11 @@
     "cta": {
       "primaryButton": {
         "text": "免费试用",
-        "link": "https://example.com/signup?trial=true"
+        "link": "https://user.xrista.net"
       },
       "secondaryButton": {
         "text": "查看套餐",
-        "link": "https://example.com/pricing"
+        "link": "https://user.xrista.net"
       }
     },
     "footer": {
@@ -110,17 +110,17 @@
         "product": {
           "features": "#features",
           "pricing": "#pricing",
-          "download": "https://example.com/download"
+          "download": "https://user.xrista.net"
         },
         "company": {
           "about": "#about",
-          "blog": "https://example.com/blog",
-          "contact": "https://example.com/contact"
+          "blog": "https://user.xrista.net",
+          "contact": "https://user.xrista.net"
         },
         "legal": {
-          "privacy": "https://example.com/privacy",
-          "terms": "https://example.com/terms",
-          "security": "https://example.com/security"
+          "privacy": "https://user.xrista.net",
+          "terms": "https://user.xrista.net",
+          "security": "https://user.xrista.net"
         }
       }
     },
