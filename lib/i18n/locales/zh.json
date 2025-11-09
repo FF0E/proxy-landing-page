@@ -23,9 +23,9 @@
       "period": "/月",
       "plans": {
         "basic": {
-          "name": "基础版",
+          "name": "小杯",
           "description": "个人用户的理想选择",
-          "price": "69",
+          "price": "8.99",
           "badge": "",
           "buttonText": "立即开始",
           "buttonLink": "https://user.xrista.net",
@@ -39,9 +39,9 @@
           ]
         },
         "pro": {
-          "name": "专业版",
+          "name": "中杯",
           "description": "高级用户的首选方案",
-          "price": "139",
+          "price": "19.99",
           "badge": "最受欢迎",
           "buttonText": "免费试用",
           "buttonLink": "https://user.xrista.net",
@@ -58,9 +58,9 @@
           ]
         },
         "enterprise": {
-          "name": "企业版",
+          "name": "大杯",
           "description": "团队协作的完美解决方案",
-          "price": "349",
+          "price": "29.99",
           "badge": "",
           "buttonText": "联系销售",
           "buttonLink": "https://user.xrista.net",
@@ -133,7 +133,7 @@
       "buttons": {
         "signIn": "登录",
         "getStarted": "立即体验",
-        "downloadNow": "立即下载",
+        "downloadNow": "立即登录",
         "viewDemo": "观看演示",
         "startFreeTrial": "免费试用",
         "viewPricing": "查看套餐"
