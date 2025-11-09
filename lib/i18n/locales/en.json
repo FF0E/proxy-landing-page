@@ -19,13 +19,13 @@
       "security": "https://user.xrista.net"
     },
     "pricing": {
-      "currency": "$",
+      "currency": "¥",
       "period": "/month",
       "plans": {
         "basic": {
           "name": "Basic",
           "description": "Perfect for casual users",
-          "price": "9.99",
+          "price": "8.99",
           "badge": "",
           "buttonText": "Get Started",
           "buttonLink": "https://user.xrista.net",
@@ -43,7 +43,7 @@
         "enterprise": {
           "name": "Enterprise",
           "description": "Advanced features for teams",
-          "price": "49.99",
+          "price": "29.99",
           "badge": "",
           "buttonText": "Contact Sales",
           "buttonLink": "https://user.xrista.net",
@@ -94,7 +94,7 @@
       "buttons": {
         "signIn": "Sign In",
         "getStarted": "Get Started",
-        "downloadNow": "Download Now",
+        "downloadNow": "Register Now",
         "viewDemo": "View Demo",
         "startFreeTrial": "Start Free Trial",
         "viewPricing": "View Pricing"
