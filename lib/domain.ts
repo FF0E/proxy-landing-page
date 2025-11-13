@@ -14,7 +14,7 @@ export async function getCurrentDomain(): Promise<string | null> {
     }
 
     // Remove port if present
-    const domain = host.split(':')[0];
+    let domain = host.split(':')[0];
 
     // Check if it's localhost or an IP address - these should use fallback
     if (
@@ -24,6 +24,11 @@ export async function getCurrentDomain(): Promise<string | null> {
       /^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$/.test(domain) // IP address pattern
     ) {
       return null;
+    }
+
+    // Strip "www" subdomain if present
+    if (domain.startsWith('www.')) {
+      domain = domain.substring(4); // Remove "www."
     }
 
     return domain;
