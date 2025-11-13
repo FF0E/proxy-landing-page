@@ -3,10 +3,22 @@
 import Link from "next/link"
 import { Shield } from "lucide-react"
 import { useTranslation, useConfig } from "@/lib/i18n/client"
+import { useDynamicLink } from "@/lib/hooks/use-dynamic-link"
 
 export function Footer() {
   const { t: tFooter } = useTranslation('footer')
   const config = useConfig()
+  const dynamicUrl = useDynamicLink()
+
+  // Helper to determine if we should use dynamic URL
+  const getHref = (configUrl: string) => {
+    // If it's an internal link (starts with # or /), use as is
+    if (configUrl.startsWith('#') || configUrl.startsWith('/')) {
+      return configUrl
+    }
+    // If it's an external link, use dynamic URL
+    return dynamicUrl
+  }
 
   return (
     <footer className="border-t border-border py-8 md:py-12 lg:py-16">
@@ -29,7 +41,7 @@ export function Footer() {
             <ul className="space-y-3 text-sm lg:text-base">
               <li>
                 <Link
-                  href={config.footer.sections.product.features}
+                  href={getHref(config.footer.sections.product.features)}
                   className="text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-sm"
                 >
                   {tFooter('sections.product.links.features')}
@@ -37,7 +49,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href={config.footer.sections.product.pricing}
+                  href={getHref(config.footer.sections.product.pricing)}
                   className="text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-sm"
                 >
                   {tFooter('sections.product.links.pricing')}
@@ -45,7 +57,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href={config.footer.sections.product.download}
+                  href={getHref(config.footer.sections.product.download)}
                   className="text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-sm"
                 >
                   {tFooter('sections.product.links.download')}
@@ -60,7 +72,7 @@ export function Footer() {
             <ul className="space-y-3 text-sm lg:text-base">
               <li>
                 <Link
-                  href={config.footer.sections.company.about}
+                  href={getHref(config.footer.sections.company.about)}
                   className="text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-sm"
                 >
                   {tFooter('sections.company.links.aboutUs')}
@@ -68,7 +80,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href={config.footer.sections.company.blog}
+                  href={getHref(config.footer.sections.company.blog)}
                   className="text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-sm"
                 >
                   {tFooter('sections.company.links.blog')}
@@ -76,7 +88,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href={config.footer.sections.company.contact}
+                  href={getHref(config.footer.sections.company.contact)}
                   className="text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-sm"
                 >
                   {tFooter('sections.company.links.contact')}
@@ -91,7 +103,7 @@ export function Footer() {
             <ul className="space-y-3 text-sm lg:text-base">
               <li>
                 <Link
-                  href={config.footer.sections.legal.privacy}
+                  href={getHref(config.footer.sections.legal.privacy)}
                   className="text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-sm"
                 >
                   {tFooter('sections.legal.links.privacyPolicy')}
@@ -99,7 +111,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href={config.footer.sections.legal.terms}
+                  href={getHref(config.footer.sections.legal.terms)}
                   className="text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-sm"
                 >
                   {tFooter('sections.legal.links.termsOfService')}
@@ -107,7 +119,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href={config.footer.sections.legal.security}
+                  href={getHref(config.footer.sections.legal.security)}
                   className="text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-sm"
                 >
                   {tFooter('sections.legal.links.security')}

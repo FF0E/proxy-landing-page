@@ -7,6 +7,8 @@ import { ErrorBoundary } from "@/components/error-boundary"
 import { I18nProvider } from "@/lib/i18n/client"
 import { getServerLocaleData, getServerConfig } from "@/lib/i18n/server"
 import { locales, type Locale } from "@/lib/i18n/config"
+import { DomainProvider } from "@/lib/domain-context"
+import { getCurrentDomain } from "@/lib/domain"
 import "../globals.css"
 
 const geist = Geist({ subsets: ["latin"] })
@@ -67,6 +69,7 @@ export default async function LocaleLayout({
   const resolvedParams = await params
   const locale = resolvedParams.locale as Locale
   const localeData = await getServerLocaleData(locale)
+  const domain = await getCurrentDomain()
 
   return (
     <html lang={locale} suppressHydrationWarning>
@@ -79,9 +82,11 @@ export default async function LocaleLayout({
             disableTransitionOnChange={false}
             themes={['light', 'dark', 'system']}
           >
-            <I18nProvider locale={locale} localeData={localeData}>
-              {children}
-            </I18nProvider>
+            <DomainProvider domain={domain}>
+              <I18nProvider locale={locale} localeData={localeData}>
+                {children}
+              </I18nProvider>
+            </DomainProvider>
           </ThemeProvider>
         </ErrorBoundary>
         {localeData.config.analytics.enabled && <Analytics />}
