@@ -6,6 +6,7 @@ import { useTranslation, useConfig } from "@/lib/i18n/client"
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
+import { useDynamicLink } from "@/lib/hooks/use-dynamic-link"
 
 function PricingCard({ planKey, isPopular }: {
   planKey: string
@@ -13,6 +14,7 @@ function PricingCard({ planKey, isPopular }: {
 }) {
   const { t } = useTranslation('pricing')
   const config = useConfig()
+  const dynamicUrl = useDynamicLink()
 
   const plan = config.pricing.plans[planKey]
   if (!plan) {
@@ -83,7 +85,7 @@ function PricingCard({ planKey, isPopular }: {
                 : "bg-primary text-primary-foreground hover:bg-primary/90"
             )}
           >
-            <Link href={plan.buttonLink}>
+            <Link href={dynamicUrl}>
               {plan.buttonText}
             </Link>
           </Button>

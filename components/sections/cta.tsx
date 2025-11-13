@@ -3,10 +3,12 @@
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { useTranslation, useConfig } from "@/lib/i18n/client"
+import { useDynamicLink } from "@/lib/hooks/use-dynamic-link"
 
 export function CTA() {
   const { t: tCta } = useTranslation('cta')
   const config = useConfig()
+  const dynamicUrl = useDynamicLink()
 
   return (
     <section className="border-y border-border bg-card py-fluid">
@@ -18,10 +20,10 @@ export function CTA() {
           </p>
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Button size="lg" className="w-full sm:w-auto touch-target" asChild>
-              <Link href={config.cta.primaryButton.link}>{config.cta.primaryButton.text}</Link>
+              <Link href={dynamicUrl}>{config.cta.primaryButton.text}</Link>
             </Button>
             <Button size="lg" variant="outline" className="w-full sm:w-auto bg-transparent touch-target" asChild>
-              <Link href={config.cta.secondaryButton.link}>{config.cta.secondaryButton.text}</Link>
+              <Link href={dynamicUrl}>{config.cta.secondaryButton.text}</Link>
             </Button>
           </div>
         </div>

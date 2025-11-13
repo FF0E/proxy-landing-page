@@ -6,6 +6,7 @@ import { Shield, Menu } from "lucide-react"
 import { useTranslation, useConfig } from "@/lib/i18n/client"
 import { LanguageSwitcher } from "@/components/language-switcher"
 import { ThemeToggle } from "@/components/theme-toggle"
+import { useDynamicLink } from "@/lib/hooks/use-dynamic-link"
 import {
   DropdownMenu,
   DropdownMenuTrigger,
@@ -15,6 +16,7 @@ import {
 export function Header() {
   const { t } = useTranslation('common')
   const config = useConfig()
+  const dynamicUrl = useDynamicLink()
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 border-b border-border bg-background/80 backdrop-blur-sm">
@@ -40,14 +42,14 @@ export function Header() {
               asChild
               className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring touch-target-sm"
             >
-              <Link href={config.links.login}>{t('buttons.signIn')}</Link>
+              <Link href={dynamicUrl}>{t('buttons.signIn')}</Link>
             </Button>
             <Button
               size="sm"
               asChild
               className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring touch-target-sm whitespace-nowrap"
             >
-              <Link href={config.links.signup}>{t('buttons.getStarted')}</Link>
+              <Link href={dynamicUrl}>{t('buttons.getStarted')}</Link>
             </Button>
           </div>
 
@@ -73,14 +75,14 @@ export function Header() {
                     asChild
                     className="flex-1 h-10 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
                   >
-                    <Link href={config.links.login}>{t('buttons.signIn')}</Link>
+                    <Link href={dynamicUrl}>{t('buttons.signIn')}</Link>
                   </Button>
                   <Button
                     size="sm"
                     asChild
                     className="flex-1 h-10 text-sm font-semibold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
                   >
-                    <Link href={config.links.signup}>{t('buttons.getStarted')}</Link>
+                    <Link href={dynamicUrl}>{t('buttons.getStarted')}</Link>
                   </Button>
                 </div>
 

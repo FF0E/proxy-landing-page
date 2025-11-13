@@ -3,12 +3,13 @@
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
 import Link from "next/link"
-import { useTranslation, useConfig } from "@/lib/i18n/client"
+import { useTranslation } from "@/lib/i18n/client"
+import { useDynamicLink } from "@/lib/hooks/use-dynamic-link"
 
 export function Hero() {
   const { t: tHero } = useTranslation('hero')
   const { t: tCommon } = useTranslation('common')
-  const config = useConfig()
+  const dynamicUrl = useDynamicLink()
 
   return (
     <section className="container mx-auto px-4 py-fluid-lg" aria-labelledby="hero-heading">
@@ -30,7 +31,7 @@ export function Hero() {
             className="w-full sm:w-auto touch-target focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
             asChild
           >
-            <Link href={config.links.download} aria-describedby="download-description">
+            <Link href={dynamicUrl} aria-describedby="download-description">
               {tCommon('buttons.downloadNow')}
               <ArrowRight className="ml-2 h-4 w-4" aria-hidden="true" />
             </Link>
@@ -41,7 +42,7 @@ export function Hero() {
             className="w-full sm:w-auto bg-transparent touch-target focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
             asChild
           >
-            <Link href={config.links.demo} aria-describedby="demo-description">
+            <Link href={dynamicUrl} aria-describedby="demo-description">
               {tCommon('buttons.viewDemo')}
             </Link>
           </Button>
