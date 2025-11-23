@@ -3,7 +3,7 @@
     "site": {
       "name": "推推",
       "url": "https://www.xrista.net",
-      "description": "军用级加密技术，畅享无界网络世界"
+      "description": "简单 高效 稳定"
     },
     "links": {
       "download": "https://user.xrista.net",
@@ -141,11 +141,11 @@
     },
     "pages": {
       "hero": {
-        "headline": "高速专线网络 连接您与世界",
-        "description": "军用级加密技术，畅享高速网络",
-        "guarantee": "低价套餐 - 尊享服务",
-        "downloadDescription": "下载SecureNet应用，开启安全上网之旅",
-        "demoDescription": "体验SecureNet强大功能"
+        "headline": "推推 Tuitui.me - 跨越一切障碍",
+        "description": "企业级加密技术，畅享高速网络",
+        "guarantee": "优质套餐 - 尊享服务",
+        "downloadDescription": "下载订阅应用，开启安全上网之旅",
+        "demoDescription": "体验 推推 强大功能"
       },
       "features": {
         "heading": "企业级安全防护，普通用户也能享用",
@@ -235,7 +235,7 @@
             }
           }
         },
-        "copyright": "© 2025 SecureNet. 版权所有。"
+        "copyright": "© 2025 tuitui.me. 版权所有。"
       },
       "stats": {
         "items": {
@@ -250,12 +250,12 @@
             "description": "持续可靠的服务保障"
           },
           "speed": {
-            "value": "10Gbps",
-            "label": "极速连接",
+            "value": "10Gbps+",
+            "label": "总接入带宽",
             "description": "光纤级网络体验"
           },
           "users": {
-            "value": "500万+",
+            "value": "500k+",
             "label": "活跃用户",
             "description": "选择信赖我们的用户"
           }
