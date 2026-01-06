@@ -1,25 +1,7 @@
-import { Header } from "@/components/header"
-import { Hero } from "@/components/sections/hero"
-import { Features } from "@/components/sections/features"
-import { Stats } from "@/components/sections/stats"
-import { Pricing } from "@/components/sections/pricing"
-import { CTA } from "@/components/sections/cta"
-import { Footer } from "@/components/footer"
-import { DepthBackground } from "@/components/backgrounds/depth-background"
+import { redirect } from "next/navigation"
+import { defaultLocale } from "@/lib/i18n/config"
 
+// Redirect the root path to the default locale to ensure translations are available
 export default function Home() {
-  return (
-    <main className="relative min-h-screen overflow-hidden bg-background">
-      <DepthBackground />
-      <div className="relative z-10">
-        <Header />
-        <Hero networkHref="/zh/network" />
-        <Stats />
-        <Features />
-        <Pricing />
-        <CTA />
-        <Footer />
-      </div>
-    </main>
-  )
+  redirect(`/${defaultLocale}`)
 }
