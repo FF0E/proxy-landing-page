@@ -62,7 +62,7 @@ export async function getServerTranslations(locale: Locale): Promise<Translation
 }
 
 export function createServerTranslator(translations: Translations) {
-  return function t(key: string, section: 'common' | 'hero' | 'features' | 'pricing' | 'cta' | 'footer' | 'stats' = 'common'): string {
+  return function t(key: string, section: 'common' | 'hero' | 'features' | 'pricing' | 'cta' | 'footer' | 'stats' | 'about' | 'network' = 'common'): string {
     const keys = key.split('.')
     let value: any
 

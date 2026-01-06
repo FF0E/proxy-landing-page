@@ -97,6 +97,7 @@ export interface CommonTranslations {
     viewDemo: string
     startFreeTrial: string
     viewPricing: string
+    viewNetwork: string
   }
 }
 
@@ -169,6 +170,180 @@ export interface CtaTranslations {
   description: string
 }
 
+export interface AboutTranslations {
+  seo: {
+    title: string
+    description: string
+    keywords: string[]
+  }
+  hero: {
+    title: string
+    tagline: string
+    description: string
+    primaryCta: string
+    secondaryCta: string
+  }
+  mission: {
+    heading: string
+    description: string
+    pillars: Array<{
+      title: string
+      description: string
+    }>
+  }
+  highlights: {
+    heading: string
+    description: string
+    items: Array<{
+      title: string
+      description: string
+    }>
+  }
+  trust: {
+    heading: string
+    stats: Array<{
+      label: string
+      value: string
+      description: string
+    }>
+  }
+  callToAction: {
+    heading: string
+    description: string
+    primaryCta: string
+    secondaryCta: string
+    note: string
+  }
+}
+
+export interface NetworkTranslations {
+  seo: {
+    title: string
+    description: string
+    keywords: string[]
+  }
+  hero: {
+    eyebrow: string
+    title: string
+    description: string
+    note: string
+    primaryCta: string
+    secondaryCta: string
+  }
+  heroStats: Record<string, {
+    label: string
+    value: string
+    helper: string
+  }>
+  nodeTypes: {
+    heading: string
+    description: string
+    items: Record<string, {
+      title: string
+      badge: string
+      description: string
+      chips: string[]
+      metricLabel: string
+      metricValue: string
+      footnote: string
+    }>
+  }
+  china: {
+    heading: string
+    description: string
+    features: Record<string, {
+      title: string
+      description: string
+    }>
+    metrics: Record<string, {
+      label: string
+      value: string
+      caption: string
+    }>
+  }
+  assurance: {
+    heading: string
+    description: string
+    items: Record<string, {
+      title: string
+      description: string
+    }>
+  }
+  cta: {
+    heading: string
+    description: string
+    primaryCta: string
+    secondaryCta: string
+    note: string
+  }
+}
+
+export interface PrivacyTranslations {
+  seo: {
+    title: string
+    description: string
+    keywords: string[]
+  }
+  backLink: string
+  title: string
+  lastUpdated: string
+  introduction: string
+  sections: Array<{
+    title: string
+    content: string[]
+  }>
+  contact: {
+    title: string
+    description: string
+    button: string
+  }
+}
+
+export interface TermsTranslations {
+  seo: {
+    title: string
+    description: string
+    keywords: string[]
+  }
+  backLink: string
+  title: string
+  lastUpdated: string
+  introduction: string
+  sections: Array<{
+    title: string
+    content: string[]
+  }>
+  contact: {
+    title: string
+    description: string
+    button: string
+  }
+}
+
+export interface FAQTranslations {
+  seo: {
+    title: string
+    description: string
+    keywords: string[]
+  }
+  backLink: string
+  title: string
+  description: string
+  categories: Array<{
+    title: string
+    items: Array<{
+      question: string
+      answer: string
+    }>
+  }>
+  cta: {
+    title: string
+    description: string
+    primaryButton: string
+    secondaryButton: string
+  }
+}
+
 export interface PricingTranslations {
   heading: string
   description: string
@@ -205,6 +380,7 @@ export interface FooterTranslations {
         features: string
         pricing: string
         download: string
+        network: string
       }
     }
     company: {
@@ -213,6 +389,13 @@ export interface FooterTranslations {
         aboutUs: string
         blog: string
         contact: string
+      }
+    }
+    resources: {
+      title: string
+      links: {
+        faq: string
+        support: string
       }
     }
     legal: {
@@ -234,6 +417,11 @@ export interface PageTranslations {
   cta: CtaTranslations
   footer: FooterTranslations
   stats: StatsTranslations
+  about: AboutTranslations
+  network: NetworkTranslations
+  privacy: PrivacyTranslations
+  terms: TermsTranslations
+  faq: FAQTranslations
 }
 
 export interface Translations {

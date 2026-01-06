@@ -29,7 +29,14 @@
           "badge": "",
           "buttonText": "Get Started",
           "buttonLink": "https://user.xrista.net",
-          "features": ["connections", "servers", "encryption", "support", "guarantee", "nologs"]
+          "features": [
+            "connections",
+            "servers",
+            "encryption",
+            "support",
+            "guarantee",
+            "nologs"
+          ]
         },
         "pro": {
           "name": "Pro",
@@ -38,7 +45,17 @@
           "badge": "Most Popular",
           "buttonText": "Start Free Trial",
           "buttonLink": "https://user.xrista.net",
-          "features": ["connections_pro", "servers_pro", "encryption_pro", "support_pro", "guarantee", "nologs", "adblocker", "bandwidth", "tunneling"]
+          "features": [
+            "connections_pro",
+            "servers_pro",
+            "encryption_pro",
+            "support_pro",
+            "guarantee",
+            "nologs",
+            "adblocker",
+            "bandwidth",
+            "tunneling"
+          ]
         },
         "enterprise": {
           "name": "Enterprise",
@@ -47,14 +64,36 @@
           "badge": "",
           "buttonText": "Contact Sales",
           "buttonLink": "https://user.xrista.net",
-          "features": ["connections_enterprise", "servers_enterprise", "encryption_enterprise", "support_enterprise", "guarantee", "nologs", "adblocker", "bandwidth", "tunneling", "dashboard", "sso", "api"]
+          "features": [
+            "connections_enterprise",
+            "servers_enterprise",
+            "encryption_enterprise",
+            "support_enterprise",
+            "guarantee",
+            "nologs",
+            "adblocker",
+            "bandwidth",
+            "tunneling",
+            "dashboard",
+            "sso",
+            "api"
+          ]
         }
       }
     },
     "navigation": [
-      { "name": "Features", "href": "#features" },
-      { "name": "Pricing", "href": "#pricing" },
-      { "name": "About", "href": "#about" }
+      {
+        "name": "Features",
+        "href": "#features"
+      },
+      {
+        "name": "Pricing",
+        "href": "#pricing"
+      },
+      {
+        "name": "About",
+        "href": "/en/about"
+      }
     ],
     "cta": {
       "primaryButton": {
@@ -74,7 +113,7 @@
           "download": "https://user.xrista.net"
         },
         "company": {
-          "about": "#about",
+          "about": "/en/about",
           "blog": "https://user.xrista.net",
           "contact": "https://user.xrista.net"
         },
@@ -97,14 +136,19 @@
         "downloadNow": "Register Now",
         "viewDemo": "View Demo",
         "startFreeTrial": "Start Free Trial",
-        "viewPricing": "View Pricing"
+        "viewPricing": "View Pricing",
+        "viewNetwork": "See China-ready network"
       }
     },
     "pages": {
       "hero": {
+        "badge": "99.9% Uptime Guaranteed",
         "headline": "Tuitui.me — Unlock Everything.",
         "description": "Experience unrestricted internet access with military-grade encryption",
         "guarantee": "No credit card required • 30-day money-back guarantee",
+        "trustBadge1": "AES-256 Encryption",
+        "trustBadge2": "Ultra Fast",
+        "trustBadge3": "Global Network",
         "downloadDescription": "Download the SecureNet application to get started",
         "demoDescription": "View a demonstration of SecureNet features"
       },
@@ -129,7 +173,7 @@
             "description": "We never track, collect, or share your private data."
           },
           "bandwidth": {
-            "title": "Unlimited Bandwidth",
+            "title": "High Speed Bandwidth",
             "description": "Stream, download, and browse without restrictions."
           },
           "anonymity": {
@@ -176,7 +220,8 @@
             "links": {
               "features": "Features",
               "pricing": "Pricing",
-              "download": "Download"
+              "download": "Download",
+              "network": "Network"
             }
           },
           "company": {
@@ -185,6 +230,13 @@
               "aboutUs": "About Us",
               "blog": "Blog",
               "contact": "Contact"
+            }
+          },
+          "resources": {
+            "title": "Resources",
+            "links": {
+              "faq": "FAQ",
+              "support": "Support Center"
             }
           },
           "legal": {
@@ -221,7 +273,523 @@
             "description": "Trust our service"
           }
         }
+      },
+      "about": {
+        "seo": {
+          "title": "About Tuitui | Secure VPN & Proxy Built for Speed and Privacy",
+          "description": "Learn how Tuitui delivers secure VPN and proxy access with military-grade encryption, zero-log privacy, and high-performance global servers for streaming, gaming, and remote teams.",
+          "keywords": [
+            "tuitui vpn",
+            "secure proxy",
+            "fast vpn",
+            "no log vpn",
+            "vpn for china",
+            "encrypted internet",
+            "privacy first proxy",
+            "vpn for businesses"
+          ]
+        },
+        "hero": {
+          "title": "Built for people who refuse to compromise on privacy or speed",
+          "tagline": "About Tuitui",
+          "description": "We started Tuitui to make private, borderless connectivity reliable for everyone — from creators and gamers to global teams that depend on secure access every day.",
+          "primaryCta": "Start protected today",
+          "secondaryCta": "Talk to our team"
+        },
+        "mission": {
+          "heading": "Why we exist",
+          "description": "The internet should feel open, fast, and safe. We combine enterprise-grade security with performance tuning so you never have to choose between privacy and speed.",
+          "pillars": [
+            {
+              "title": "Privacy by default",
+              "description": "Zero-log architecture, strong encryption, and network isolation to keep your identity and activity out of reach."
+            },
+            {
+              "title": "Performance everywhere",
+              "description": "Optimized routes, smart caching, and high-bandwidth peers designed to keep latency low even during peak hours."
+            },
+            {
+              "title": "Reliable support",
+              "description": "Human support that can help with complex network setups, streaming needs, or compliance questions at any time."
+            }
+          ]
+        },
+        "highlights": {
+          "heading": "What makes our network different",
+          "description": "A secure proxy is only as good as the trust and uptime behind it. Here is how we keep your connections stable and compliant.",
+          "items": [
+            {
+              "title": "Hardened security stack",
+              "description": "End-to-end AES-256 encryption, DNS leak protection, and automatic kill-switch coverage on every session."
+            },
+            {
+              "title": "Global reach with local latency",
+              "description": "Strategic POPs across APAC, EMEA, and the Americas so video, gaming, and remote desktops stay smooth."
+            },
+            {
+              "title": "Compliance ready",
+              "description": "Operational controls, privacy reviews, and data minimization that keep us aligned with SOC2-style best practices."
+            },
+            {
+              "title": "Human-first support",
+              "description": "Real engineers on standby with clear runbooks to troubleshoot routing, ports, and content access."
+            }
+          ]
+        },
+        "trust": {
+          "heading": "Proof you can rely on",
+          "stats": [
+            {
+              "label": "Uptime",
+              "value": "99.9%",
+              "description": "Redundant routes and automated failover keep traffic moving."
+            },
+            {
+              "label": "Countries covered",
+              "value": "60+",
+              "description": "Optimized entry points for streaming, SaaS access, and remote teams."
+            },
+            {
+              "label": "Average setup",
+              "value": "<10 minutes",
+              "description": "Guided onboarding with presets for desktop, mobile, and routers."
+            },
+            {
+              "label": "Support satisfaction",
+              "value": "4.8/5",
+              "description": "Fast, clear answers from specialists who know the stack."
+            }
+          ]
+        },
+        "callToAction": {
+          "heading": "Ready to experience secure, open internet?",
+          "description": "Join a network built to be fast, private, and resilient. Choose the plan that fits or talk with us about your setup.",
+          "primaryCta": "Get started",
+          "secondaryCta": "Schedule a call",
+          "note": "No long-term contracts. Cancel anytime."
+        }
+      },
+      "network": {
+        "seo": {
+          "title": "China-optimized VPN nodes | Tuitui network",
+          "description": "See our node types, China connectivity paths, and resiliency guarantees built for low latency and anti-blocking.",
+          "keywords": [
+            "vpn china",
+            "cn2 gia",
+            "china optimized vpn",
+            "anti dpi",
+            "vpn nodes china"
+          ]
+        },
+        "hero": {
+          "eyebrow": "Network intelligence",
+          "title": "Purpose-built nodes with proven China reachability",
+          "description": "Curated exits, tuned routes, and anti-DPI transports keep you online across mainland, cross-border, and global traffic.",
+          "note": "Live routes monitored every 60s with automatic failover.",
+          "primaryCta": "Start with the best route",
+          "secondaryCta": "Talk to a network engineer"
+        },
+        "heroStats": {
+          "latency": {
+            "label": "China latency (avg)",
+            "value": "68ms",
+            "helper": "Across CN2/GIA + private peers"
+          },
+          "success": {
+            "label": "Success through DPI",
+            "value": "99.2%",
+            "helper": "Measured over last 30 days"
+          },
+          "downtime": {
+            "label": "Downtime last month",
+            "value": "4m",
+            "helper": "Protected by automatic failover"
+          }
+        },
+        "nodeTypes": {
+          "heading": "Node types tuned for every path",
+          "description": "Pick the exit that fits your use case. We pre-tune congestion control, MTU, and TLS camouflage for China-friendly stability.",
+          "items": {
+            "cnPremium": {
+              "title": "Premium CN Smart",
+              "badge": "GIA / CN2 blend",
+              "description": "Balanced for China cross-border with automatic circuit switching between GIA, CN2, and private peers.",
+              "chips": [
+                "Dual-stack IPv4/IPv6",
+                "Auto MTU discovery",
+                "TLS camouflage"
+              ],
+              "metricLabel": "Median CN RTT",
+              "metricValue": "55-80ms",
+              "footnote": "Prefers verified China-optimal paths."
+            },
+            "streaming": {
+              "title": "Streaming Edge",
+              "badge": "Netflix / Disney+",
+              "description": "Optimized for media unlock with regional IP pools and jitter smoothing for long-form video.",
+              "chips": [
+                "Geo-pinned IP",
+                "Jitter smoothing",
+                "Smart DNS"
+              ],
+              "metricLabel": "Throughput (peaks)",
+              "metricValue": ">800 Mbps",
+              "footnote": "Regionalized exits to keep catalogs consistent."
+            },
+            "residential": {
+              "title": "Residential Blend",
+              "badge": "Harder to block",
+              "description": "Rotating residential egress with soft routing for apps that are sensitive to data-center IP ranges.",
+              "chips": [
+                "Residential ASN",
+                "Session pinning",
+                "Low handshake burst"
+              ],
+              "metricLabel": "Block rate (30d)",
+              "metricValue": "<0.5%",
+              "footnote": "Gentle packet pacing to avoid DPI bursts."
+            },
+            "static": {
+              "title": "Static IP for Teams",
+              "badge": "Compliance ready",
+              "description": "Fixed egress with reverse DNS and allowlisting support for VPN, SSH, and remote desktops.",
+              "chips": [
+                "Reverse DNS",
+                "Port openness controls",
+                "WireGuard / TLS"
+              ],
+              "metricLabel": "Uptime (rolling)",
+              "metricValue": "99.9%",
+              "footnote": "Change windows announced 24h ahead."
+            }
+          }
+        },
+        "china": {
+          "heading": "Built to stay reachable from mainland China",
+          "description": "We keep multiple simultaneous paths online so your sessions survive congestion, resets, and filtering.",
+          "features": {
+            "transports": {
+              "title": "Adaptive transports",
+              "description": "Smarter fallbacks between TLS 1.3, WS+TLS, and gRPC obfuscation to dodge active probing."
+            },
+            "automation": {
+              "title": "Route health automation",
+              "description": "Real-time probes from Guangzhou, Shanghai, and Beijing adjust priorities before users feel it."
+            },
+            "resilience": {
+              "title": "Content resilience",
+              "description": "Split-tunneling presets for CN traffic vs. global; DNS failover with ECS for stable responses."
+            }
+          },
+          "metrics": {
+            "probes": {
+              "label": "Probe locations",
+              "value": "12 CN cities",
+              "caption": "North, East, South China vantage points"
+            },
+            "failover": {
+              "label": "Failover time",
+              "value": "< 5s",
+              "caption": "Session-preserving reroutes"
+            },
+            "loss": {
+              "label": "Packet loss shield",
+              "value": "-35%",
+              "caption": "Forward error correction on bad links"
+            }
+          }
+        },
+        "assurance": {
+          "heading": "Operational assurances",
+          "description": "Security and routing guardrails baked into the network.",
+          "items": {
+            "killswitch": {
+              "title": "Kill-switch & DNS leak protection",
+              "description": "Clients cut traffic on link drops and pin DNS resolvers per path."
+            },
+            "telemetry": {
+              "title": "Telemetry without identities",
+              "description": "We track route health, never user activity or destination metadata."
+            },
+            "watchdesk": {
+              "title": "24/7 China watch desk",
+              "description": "Human review on anomalies; playbooks for ICP blocks and carrier throttling."
+            }
+          }
+        },
+        "cta": {
+          "heading": "Choose the node that fits you",
+          "description": "Tell us your scenario—streaming, trading, team access—and we will bind the best path.",
+          "primaryCta": "Start protected now",
+          "secondaryCta": "Schedule a consult",
+          "note": "Zero config needed—auto-selects the healthiest China route."
+        }
+      },
+      "privacy": {
+        "seo": {
+          "title": "Privacy Policy | Tuitui - Your Data Protection Commitment",
+          "description": "Learn how Tuitui protects your privacy with zero-log policies, military-grade encryption, and transparent data practices. Your privacy is our priority.",
+          "keywords": [
+            "privacy policy",
+            "vpn privacy",
+            "zero log vpn",
+            "data protection",
+            "tuitui privacy",
+            "secure vpn policy",
+            "no logs vpn"
+          ]
+        },
+        "backLink": "Back to Home",
+        "title": "Privacy Policy",
+        "lastUpdated": "Last updated: January 6, 2026",
+        "introduction": "At Tuitui, protecting your privacy is fundamental to our mission. This Privacy Policy explains how we collect, use, and safeguard your information when you use our VPN and proxy services. We are committed to transparency and ensuring you understand exactly how your data is handled.",
+        "sections": [
+          {
+            "title": "1. Information We Collect",
+            "content": [
+              "We operate under a strict zero-log policy. This means we do not collect, store, or monitor your browsing activity, connection timestamps, session durations, IP addresses, or DNS queries while using our VPN service.",
+              "Account Information: When you create an account, we collect your email address and payment information necessary to process your subscription. We use industry-standard encryption to protect this data.",
+              "Technical Data: We may collect anonymous, aggregated data about service performance (such as server load statistics) to improve our infrastructure. This data cannot be used to identify individual users."
+            ]
+          },
+          {
+            "title": "2. How We Use Your Information",
+            "content": [
+              "The limited information we collect is used solely to: provide and maintain our services, process payments and manage subscriptions, communicate important service updates, improve our infrastructure and user experience, and comply with legal obligations.",
+              "We never sell, rent, or share your personal information with third parties for marketing purposes."
+            ]
+          },
+          {
+            "title": "3. Data Security",
+            "content": [
+              "We implement military-grade AES-256 encryption to protect all data transmitted through our network. Our infrastructure is regularly audited by independent security firms to ensure the highest standards of protection.",
+              "Our servers are configured to automatically delete any temporary connection data immediately after your session ends. We operate a RAM-only server infrastructure in many locations, ensuring no data persists on physical storage."
+            ]
+          },
+          {
+            "title": "4. Third-Party Services",
+            "content": [
+              "We use trusted third-party payment processors (such as Stripe) to handle transactions. These providers have their own privacy policies and security measures. We do not have access to your complete payment card details.",
+              "We may use analytics services that collect anonymous usage statistics to help us improve our service. These services do not track your VPN activity."
+            ]
+          },
+          {
+            "title": "5. Your Rights",
+            "content": [
+              "You have the right to access, correct, or delete your personal information at any time. You can update your account information through your dashboard or contact our support team for assistance.",
+              "You may request a copy of all personal data we hold about you, or request complete deletion of your account and associated information."
+            ]
+          },
+          {
+            "title": "6. International Data Transfers",
+            "content": [
+              "Our servers are located in multiple jurisdictions worldwide. By using our service, you consent to the transfer of your information to servers outside your country of residence. We ensure all transfers comply with applicable data protection laws."
+            ]
+          },
+          {
+            "title": "7. Changes to This Policy",
+            "content": [
+              "We may update this Privacy Policy from time to time. We will notify you of any significant changes via email or through our service. Your continued use of our service after changes take effect constitutes acceptance of the updated policy."
+            ]
+          }
+        ],
+        "contact": {
+          "title": "Questions About Privacy?",
+          "description": "If you have any questions about our privacy practices or this policy, our team is here to help.",
+          "button": "Contact Support"
+        }
+      },
+      "terms": {
+        "seo": {
+          "title": "Terms of Service | Tuitui VPN - User Agreement",
+          "description": "Read Tuitui's Terms of Service to understand your rights and responsibilities when using our secure VPN and proxy services. Fair, transparent, and user-focused.",
+          "keywords": [
+            "terms of service",
+            "vpn terms",
+            "user agreement",
+            "tuitui terms",
+            "vpn policy",
+            "service agreement"
+          ]
+        },
+        "backLink": "Back to Home",
+        "title": "Terms of Service",
+        "lastUpdated": "Last updated: January 6, 2026",
+        "introduction": "Welcome to Tuitui. These Terms of Service govern your use of our VPN and proxy services. By accessing or using our services, you agree to be bound by these terms. Please read them carefully before using our platform.",
+        "sections": [
+          {
+            "title": "1. Acceptance of Terms",
+            "content": [
+              "By creating an account or using Tuitui services, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service and our Privacy Policy.",
+              "If you are using our services on behalf of an organization, you represent that you have the authority to bind that organization to these terms."
+            ]
+          },
+          {
+            "title": "2. Service Description",
+            "content": [
+              "Tuitui provides virtual private network (VPN) and proxy services designed to enhance your online privacy and security. Our services encrypt your internet connection and allow you to access content from various geographic locations.",
+              "We strive to maintain high availability and performance, but we do not guarantee uninterrupted service. Scheduled maintenance and unforeseen technical issues may occasionally affect service availability."
+            ]
+          },
+          {
+            "title": "3. Account Responsibilities",
+            "content": [
+              "You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account. Please use a strong, unique password and enable additional security features when available.",
+              "You must provide accurate and complete information when creating your account and keep this information up to date. You agree to notify us immediately of any unauthorized use of your account."
+            ]
+          },
+          {
+            "title": "4. Acceptable Use Policy",
+            "content": [
+              "You agree to use our services only for lawful purposes. Prohibited activities include: distributing malware or engaging in hacking, sending spam or unsolicited communications, infringing on intellectual property rights, engaging in any activity that violates applicable laws.",
+              "We reserve the right to suspend or terminate accounts that violate these terms without prior notice. No refunds will be provided for accounts terminated due to policy violations."
+            ]
+          },
+          {
+            "title": "5. Payment and Refunds",
+            "content": [
+              "Subscription fees are billed in advance according to your chosen plan. All prices are displayed in your local currency where available and include applicable taxes.",
+              "We offer a 30-day money-back guarantee for new subscribers. If you are not satisfied with our service, you may request a full refund within 30 days of your initial purchase. Refund requests after this period are evaluated on a case-by-case basis."
+            ]
+          },
+          {
+            "title": "6. Intellectual Property",
+            "content": [
+              "All content, trademarks, and intellectual property associated with Tuitui remain our exclusive property. You may not copy, modify, distribute, or create derivative works based on our service without explicit written permission.",
+              "You retain ownership of any content you transmit through our service. We do not claim any rights to your personal data or communications."
+            ]
+          },
+          {
+            "title": "7. Limitation of Liability",
+            "content": [
+              "To the maximum extent permitted by law, Tuitui shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of our services.",
+              "Our total liability for any claims arising from these terms or your use of our services shall not exceed the amount you paid for the service in the twelve months preceding the claim."
+            ]
+          },
+          {
+            "title": "8. Modifications to Terms",
+            "content": [
+              "We reserve the right to modify these Terms of Service at any time. We will provide notice of significant changes via email or through our service. Your continued use of the service after changes take effect constitutes acceptance of the modified terms."
+            ]
+          }
+        ],
+        "contact": {
+          "title": "Have Questions?",
+          "description": "If you have any questions about these terms or need clarification, our support team is ready to assist you.",
+          "button": "Contact Us"
+        }
+      },
+      "faq": {
+        "seo": {
+          "title": "FAQ | Tuitui VPN - Frequently Asked Questions",
+          "description": "Find answers to common questions about Tuitui VPN: setup guides, troubleshooting, billing, security features, and more. Get help quickly.",
+          "keywords": [
+            "vpn faq",
+            "tuitui help",
+            "vpn questions",
+            "vpn setup",
+            "vpn troubleshooting",
+            "vpn support",
+            "how to use vpn"
+          ]
+        },
+        "backLink": "Back to Home",
+        "title": "Frequently Asked Questions",
+        "description": "Find quick answers to common questions about our VPN service, setup, billing, and security features.",
+        "categories": [
+          {
+            "title": "Getting Started",
+            "items": [
+              {
+                "question": "How do I set up Tuitui VPN on my device?",
+                "answer": "Setting up Tuitui is simple. After creating an account, download our app from your device's app store or our website. Log in with your credentials, select a server location, and tap connect. The whole process takes less than 5 minutes."
+              },
+              {
+                "question": "Which devices and platforms are supported?",
+                "answer": "Tuitui supports Windows, macOS, Linux, iOS, Android, and browser extensions for Chrome and Firefox. We also provide router configuration guides for protecting all devices on your network simultaneously."
+              },
+              {
+                "question": "How many devices can I connect simultaneously?",
+                "answer": "Depending on your plan, you can connect 5 to unlimited devices simultaneously. Our Basic plan supports 5 devices, Pro supports 10, and Enterprise offers unlimited connections."
+              },
+              {
+                "question": "Do I need technical knowledge to use the VPN?",
+                "answer": "Not at all! Our apps are designed for ease of use. Simply install, log in, and connect with one click. For advanced users, we offer customizable settings and protocol options."
+              }
+            ]
+          },
+          {
+            "title": "Privacy & Security",
+            "items": [
+              {
+                "question": "Does Tuitui keep logs of my activity?",
+                "answer": "No. We operate under a strict zero-log policy. We do not record your browsing history, connection timestamps, IP addresses, or any data that could identify your online activities."
+              },
+              {
+                "question": "What encryption does Tuitui use?",
+                "answer": "We use military-grade AES-256 encryption, the same standard used by banks and government agencies. Combined with secure protocols like WireGuard and OpenVPN, your data remains completely protected."
+              },
+              {
+                "question": "What is a kill switch and do you have one?",
+                "answer": "A kill switch automatically cuts your internet connection if the VPN drops unexpectedly, preventing your real IP from being exposed. Yes, all Tuitui apps include an automatic kill switch feature."
+              },
+              {
+                "question": "Can my ISP see that I'm using a VPN?",
+                "answer": "With our obfuscation technology, your VPN traffic appears as regular HTTPS traffic. This makes it difficult for ISPs or network administrators to detect VPN usage."
+              }
+            ]
+          },
+          {
+            "title": "Performance & Features",
+            "items": [
+              {
+                "question": "Will using a VPN slow down my internet?",
+                "answer": "Modern VPN protocols have minimal impact on speed. With Tuitui's optimized servers and WireGuard protocol, most users experience less than 10% speed reduction. Our premium servers are designed for streaming and gaming."
+              },
+              {
+                "question": "Can I use Tuitui for streaming?",
+                "answer": "Yes! Our streaming-optimized servers are specifically tuned for platforms like Netflix, Disney+, and more. They provide reliable access and high-speed connections for buffer-free viewing."
+              },
+              {
+                "question": "Does Tuitui work in China?",
+                "answer": "Yes, we have specially designed servers and protocols optimized for use in China. Our CN Premium and Smart routing automatically select the best paths through the Great Firewall."
+              },
+              {
+                "question": "What is split tunneling?",
+                "answer": "Split tunneling lets you choose which apps use the VPN and which connect directly to the internet. This is useful for accessing local services while keeping other traffic protected."
+              }
+            ]
+          },
+          {
+            "title": "Billing & Account",
+            "items": [
+              {
+                "question": "What payment methods do you accept?",
+                "answer": "We accept major credit cards, PayPal, and various cryptocurrency options for maximum privacy. All payments are processed securely through trusted payment providers."
+              },
+              {
+                "question": "Is there a free trial?",
+                "answer": "We offer a 30-day money-back guarantee on all plans. This allows you to try our service risk-free. If you're not satisfied, simply request a refund within 30 days."
+              },
+              {
+                "question": "How do I cancel my subscription?",
+                "answer": "You can cancel your subscription anytime from your account dashboard. Your service will remain active until the end of your current billing period. No cancellation fees apply."
+              },
+              {
+                "question": "Can I upgrade or downgrade my plan?",
+                "answer": "Yes, you can change your plan at any time. Upgrades take effect immediately with prorated billing. Downgrades take effect at the start of your next billing cycle."
+              }
+            ]
+          }
+        ],
+        "cta": {
+          "title": "Still have questions?",
+          "description": "Our support team is available 24/7 to help you with any questions or issues.",
+          "primaryButton": "Get Started",
+          "secondaryButton": "Contact Support"
+        }
       }
     }
   }
+}
 }
