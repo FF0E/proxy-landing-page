@@ -29,32 +29,87 @@ export async function generateMetadata({
 
   const siteName = config.site.name
   const siteDescription = config.site.description
+  const siteUrl = config.site.url
+  const isEnglish = locale === 'en'
+
+  const title = isEnglish
+    ? `${siteName} - Secure VPN Service | Military-Grade Encryption`
+    : `${siteName} - 安全VPN服务 | 军用级加密保护您的隐私`
+
+  const keywords = isEnglish
+    ? [
+      "VPN",
+      "proxy service",
+      "cybersecurity",
+      "privacy protection",
+      "military-grade encryption",
+      "secure browsing",
+      "internet freedom",
+      "online privacy",
+    ]
+    : [
+      "VPN",
+      "代理服务",
+      "网络安全",
+      "隐私保护",
+      "军用级加密",
+      "翻墙",
+      "科学上网",
+      "安全上网",
+    ]
 
   return {
-    title: `${siteName} - Secure Your Digital Freedom`,
+    title: {
+      default: title,
+      template: `%s | ${siteName}`,
+    },
     description: siteDescription,
     generator: "Next.js",
-    keywords: ["proxy", "vpn", "security", "privacy", "encryption", "internet freedom"],
-    authors: [{ name: "SecureNet Team" }],
-    creator: "SecureNet Team",
-    metadataBase: new URL(config.site.url),
+    keywords,
+    authors: [{ name: siteName }],
+    creator: siteName,
+    publisher: siteName,
+    metadataBase: new URL(siteUrl),
+    alternates: {
+      canonical: `${siteUrl}/${locale}`,
+      languages: {
+        'en': `${siteUrl}/en`,
+        'zh': `${siteUrl}/zh`,
+      },
+    },
     icons: {
       icon: '/favicon.svg',
       shortcut: '/favicon.svg',
       apple: '/favicon.svg',
     },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-video-preview': -1,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
+      },
+    },
     openGraph: {
       type: "website",
       locale: locale === 'zh' ? "zh_CN" : "en_US",
-      url: config.site.url,
-      title: `${siteName} - Secure Your Digital Freedom`,
+      alternateLocale: locale === 'zh' ? ["en_US"] : ["zh_CN"],
+      url: `${siteUrl}/${locale}`,
+      title,
       description: siteDescription,
       siteName: siteName,
     },
     twitter: {
       card: "summary_large_image",
-      title: `${siteName} - Secure Your Digital Freedom`,
+      title,
       description: siteDescription,
+      creator: `@${siteName}`,
+    },
+    other: {
+      'telegram:channel': '@' + siteName.toLowerCase().replace(/\s/g, ''),
     },
   }
 }
@@ -90,6 +145,41 @@ export default async function LocaleLayout({
           </ThemeProvider>
         </ErrorBoundary>
         {localeData.config.analytics.enabled && <Analytics />}
+        <script
+          type="application/ld+json"
+          suppressHydrationWarning
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'Organization',
+              name: localeData.config.site.name,
+              url: localeData.config.site.url,
+              logo: `${localeData.config.site.url}/favicon.svg`,
+              description: localeData.config.site.description,
+            }),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          suppressHydrationWarning
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'SoftwareApplication',
+              name: localeData.config.site.name,
+              applicationCategory: 'SecurityApplication',
+              operatingSystem: 'Windows, macOS, Linux, iOS, Android',
+              description: localeData.config.site.description,
+              offers: {
+                '@type': 'AggregateOffer',
+                lowPrice: localeData.config.pricing.plans.basic.price,
+                highPrice: localeData.config.pricing.plans.enterprise.price,
+                priceCurrency: 'CNY',
+                offerCount: 3,
+              },
+            }),
+          }}
+        />
       </body>
     </html>
   )

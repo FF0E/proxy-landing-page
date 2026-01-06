@@ -30,7 +30,7 @@ export function I18nProvider({ locale, localeData, children }: I18nProviderProps
   )
 }
 
-export function useTranslation(section: 'common' | 'hero' | 'features' | 'pricing' | 'cta' | 'footer' | 'stats') {
+export function useTranslation(section: 'common' | 'hero' | 'features' | 'pricing' | 'cta' | 'footer' | 'stats' | 'about' | 'network') {
   const context = useContext(I18nContext)
 
   if (!context) {
@@ -38,6 +38,8 @@ export function useTranslation(section: 'common' | 'hero' | 'features' | 'pricin
   }
 
   const { locale, translations } = context
+
+  const sectionData = section === 'common' ? translations.common : translations.pages[section]
 
   const t = (key: string): string => {
     const keys = key.split('.')
@@ -63,7 +65,7 @@ export function useTranslation(section: 'common' | 'hero' | 'features' | 'pricin
     return key
   }
 
-  return { t, locale }
+  return { t, locale, section: sectionData }
 }
 
 export function useConfig() {

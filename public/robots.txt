@@ -1,4 +1,23 @@
 User-agent: *
 Allow: /
+Disallow: /api/
+Disallow: /_next/
 
-Sitemap: /sitemap.xml
+# Crawl-delay for polite crawling
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://www.xrista.net/sitemap.xml
+
+# Additional search engine specific rules
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Yandex
+Allow: /
+
+User-agent: Baiduspider
+Allow: /

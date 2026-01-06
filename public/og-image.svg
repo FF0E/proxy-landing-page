@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a"/>
+      <stop offset="50%" style="stop-color:#1e293b"/>
+      <stop offset="100%" style="stop-color:#0f172a"/>
+    </linearGradient>
+    <linearGradient id="shieldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6"/>
+      <stop offset="100%" style="stop-color:#8b5cf6"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGradient)"/>
+  
+  <!-- Decorative circles -->
+  <circle cx="100" cy="100" r="200" fill="#3b82f6" opacity="0.05"/>
+  <circle cx="1100" cy="530" r="250" fill="#8b5cf6" opacity="0.05"/>
+  
+  <!-- Shield Logo -->
+  <g transform="translate(540, 180)" filter="url(#glow)">
+    <path d="M60 10 L110 30 L110 70 C110 110 60 130 60 130 C60 130 10 110 10 70 L10 30 Z" 
+          fill="none" 
+          stroke="url(#shieldGradient)" 
+          stroke-width="4" 
+          stroke-linecap="round" 
+          stroke-linejoin="round"/>
+    <!-- Checkmark inside shield -->
+    <path d="M35 70 L50 85 L85 50" 
+          fill="none" 
+          stroke="url(#shieldGradient)" 
+          stroke-width="4" 
+          stroke-linecap="round" 
+          stroke-linejoin="round"/>
+  </g>
+  
+  <!-- Brand Name -->
+  <text x="600" y="380" 
+        font-family="system-ui, -apple-system, sans-serif" 
+        font-size="72" 
+        font-weight="bold" 
+        fill="#ffffff" 
+        text-anchor="middle">推推</text>
+  
+  <!-- Tagline -->
+  <text x="600" y="440" 
+        font-family="system-ui, -apple-system, sans-serif" 
+        font-size="28" 
+        fill="#94a3b8" 
+        text-anchor="middle">军用级加密技术，畅享无界网络世界</text>
+  
+  <!-- Bottom badge -->
+  <rect x="475" y="500" width="250" height="40" rx="20" fill="#3b82f6" opacity="0.2"/>
+  <text x="600" y="527" 
+        font-family="system-ui, -apple-system, sans-serif" 
+        font-size="18" 
+        fill="#3b82f6" 
+        text-anchor="middle">安全 · 快速 · 可靠</text>
+</svg>
