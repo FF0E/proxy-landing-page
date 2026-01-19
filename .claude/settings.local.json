@@ -2,7 +2,8 @@
   "permissions": {
     "allow": [
       "Bash(mv:*)",
-      "Bash(file:*)"
+      "Bash(file:*)",
+      "Bash(git lfs:*)"
     ],
     "deny": [],
     "ask": []

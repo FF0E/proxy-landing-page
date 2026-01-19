@@ -22,12 +22,14 @@ export function PhoneMockup({ src, alt, className, priority = false }: PhoneMock
         {/* Screen */}
         <div className="relative aspect-[9/19.5] overflow-hidden rounded-[2rem] bg-black">
           <Image
+            key={src}
             src={src}
             alt={alt}
             fill
             className="object-cover object-top"
             sizes="(max-width: 640px) 280px, (max-width: 768px) 320px, 360px"
             priority={priority}
+            unoptimized
           />
         </div>
       </div>
@@ -57,11 +59,13 @@ export function PhoneMockupSmall({ src, alt, className }: PhoneMockupSmallProps)
         {/* Screen */}
         <div className="relative aspect-[9/19.5] overflow-hidden rounded-[1.25rem] bg-black">
           <Image
+            key={src}
             src={src}
             alt={alt}
             fill
             className="object-cover object-top"
             sizes="240px"
+            unoptimized
           />
         </div>
       </div>
