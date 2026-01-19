@@ -816,7 +816,9 @@
         "platforms": {
           "android": {
             "name": "安卓",
-            "badge": "APK v0.0.56"
+            "badge": "APK v0.0.56",
+            "arm64Hint": "推荐大多数设备使用（现代手机和平板）",
+            "x86Hint": "仅在ARM64版本安装失败时使用"
           },
           "ios": {
             "name": "iOS",

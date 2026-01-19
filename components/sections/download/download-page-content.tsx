@@ -41,8 +41,9 @@ const screenshots = {
 }
 
 export function DownloadPageContent({ content, locale }: DownloadPageContentProps) {
-  // External download link - replace with actual hosting URL
-  const downloadPath = "https://example.com/downloads/tuitui-0.0.56-universal-release.apk"
+  // Download paths for different architectures
+  const downloadArm64 = "/downloads/tuitui-arm64.apk"
+  const downloadX86 = "/downloads/tuitui-x86.apk"
 
   return (
     <div className="pb-16">
@@ -75,26 +76,38 @@ export function DownloadPageContent({ content, locale }: DownloadPageContentProp
               </MotionWrapper>
 
               <MotionWrapper animation="fade-up" delay={0.3}>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                  {/* Android Download - Active */}
-                  <Button size="lg" asChild className="touch-target gap-2">
-                    <Link href={downloadPath} target="_blank" rel="noopener noreferrer">
-                      <Smartphone className="h-5 w-5" />
-                      {content.hero.downloadButton}
-                      <span className="ml-2 text-xs px-2 py-0.5 rounded-full bg-primary-foreground/20 text-primary-foreground">
-                        {content.hero.version}
-                      </span>
-                    </Link>
-                  </Button>
+                <div className="flex flex-col gap-4 justify-center lg:justify-start">
+                  {/* ARM64 Download - Recommended */}
+                  <div className="flex flex-col gap-2">
+                    <Button size="lg" asChild className="touch-target gap-2">
+                      <Link href={downloadArm64} download>
+                        <Smartphone className="h-5 w-5" />
+                        {content.hero.downloadButton}
+                        <span className="ml-2 text-xs px-2 py-0.5 rounded-full bg-primary-foreground/20 text-primary-foreground">
+                          ARM64
+                        </span>
+                      </Link>
+                    </Button>
+                    <p className="text-xs text-muted-foreground text-center lg:text-left">
+                      {content.platforms.android.arm64Hint}
+                    </p>
+                  </div>
 
-                  {/* Commented out for future platforms */}
-                  {/* <Button size="lg" variant="outline" disabled className="touch-target gap-2 opacity-60">
-                    <Apple className="h-5 w-5" />
-                    {content.platforms.ios.name}
-                    <Badge variant="secondary" className="ml-2 text-xs">
-                      {content.platforms.ios.badge}
-                    </Badge>
-                  </Button> */}
+                  {/* x86 Download - Fallback */}
+                  <div className="flex flex-col gap-2">
+                    <Button size="lg" variant="outline" asChild className="touch-target gap-2">
+                      <Link href={downloadX86} download>
+                        <Smartphone className="h-5 w-5" />
+                        {content.hero.downloadButton}
+                        <span className="ml-2 text-xs px-2 py-0.5 rounded-full bg-muted text-muted-foreground">
+                          x86
+                        </span>
+                      </Link>
+                    </Button>
+                    <p className="text-xs text-muted-foreground text-center lg:text-left">
+                      {content.platforms.android.x86Hint}
+                    </p>
+                  </div>
                 </div>
               </MotionWrapper>
             </div>
@@ -335,9 +348,21 @@ export function DownloadPageContent({ content, locale }: DownloadPageContentProp
               </p>
               <div className="mt-6 flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4">
                 <Button size="lg" asChild className="touch-target gap-2">
-                  <Link href={downloadPath} target="_blank" rel="noopener noreferrer">
+                  <Link href={downloadArm64} download>
                     <Download className="h-5 w-5" />
                     {content.cta.button}
+                    <span className="ml-2 text-xs px-2 py-0.5 rounded-full bg-primary-foreground/20 text-primary-foreground">
+                      ARM64
+                    </span>
+                  </Link>
+                </Button>
+                <Button size="lg" variant="outline" asChild className="touch-target gap-2">
+                  <Link href={downloadX86} download>
+                    <Download className="h-5 w-5" />
+                    {content.cta.button}
+                    <span className="ml-2 text-xs px-2 py-0.5 rounded-full bg-muted text-muted-foreground">
+                      x86
+                    </span>
                   </Link>
                 </Button>
               </div>
