@@ -41,7 +41,8 @@ const screenshots = {
 }
 
 export function DownloadPageContent({ content, locale }: DownloadPageContentProps) {
-  const downloadPath = "/downloads/tuitui-0.0.56-universal-release.apk"
+  // External download link - replace with actual hosting URL
+  const downloadPath = "https://example.com/downloads/tuitui-0.0.56-universal-release.apk"
 
   return (
     <div className="pb-16">
@@ -77,7 +78,7 @@ export function DownloadPageContent({ content, locale }: DownloadPageContentProp
                 <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                   {/* Android Download - Active */}
                   <Button size="lg" asChild className="touch-target gap-2">
-                    <Link href={downloadPath} download>
+                    <Link href={downloadPath} target="_blank" rel="noopener noreferrer">
                       <Smartphone className="h-5 w-5" />
                       {content.hero.downloadButton}
                       <span className="ml-2 text-xs px-2 py-0.5 rounded-full bg-primary-foreground/20 text-primary-foreground">
@@ -334,7 +335,7 @@ export function DownloadPageContent({ content, locale }: DownloadPageContentProp
               </p>
               <div className="mt-6 flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4">
                 <Button size="lg" asChild className="touch-target gap-2">
-                  <Link href={downloadPath} download>
+                  <Link href={downloadPath} target="_blank" rel="noopener noreferrer">
                     <Download className="h-5 w-5" />
                     {content.cta.button}
                   </Link>
