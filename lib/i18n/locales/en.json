@@ -817,6 +817,7 @@
           "android": {
             "name": "Android",
             "badge": "APK v0.0.56",
+            "recommended": "Recommended",
             "arm64Hint": "Recommended for most devices (modern phones & tablets)",
             "x86Hint": "Use only if ARM64 version fails to install"
           },

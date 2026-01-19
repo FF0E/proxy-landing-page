@@ -361,6 +361,7 @@ export interface DownloadTranslations {
     android: {
       name: string
       badge: string
+      recommended: string
       arm64Hint: string
       x86Hint: string
     }

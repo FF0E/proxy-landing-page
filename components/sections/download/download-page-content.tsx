@@ -42,8 +42,8 @@ const screenshots = {
 
 export function DownloadPageContent({ content, locale }: DownloadPageContentProps) {
   // Download paths for different architectures
-  const downloadArm64 = "/downloads/tuitui-arm64.apk"
-  const downloadX86 = "/downloads/tuitui-x86.apk"
+  const downloadArm64 = "/downloads/cmfa-0.0.56-alpha-arm64-v8a-release.apk"
+  const downloadX86 = "/downloads/cmfa-0.0.56-alpha-x86_64-release.apk"
 
   return (
     <div className="pb-16">
@@ -83,7 +83,10 @@ export function DownloadPageContent({ content, locale }: DownloadPageContentProp
                       <Link href={downloadArm64} download>
                         <Smartphone className="h-5 w-5" />
                         {content.hero.downloadButton}
-                        <span className="ml-2 text-xs px-2 py-0.5 rounded-full bg-primary-foreground/20 text-primary-foreground">
+                        <span className="ml-1 text-xs px-2 py-0.5 rounded-full bg-primary-foreground/20 text-primary-foreground">
+                          {content.platforms.android.recommended}
+                        </span>
+                        <span className="text-xs px-2 py-0.5 rounded-full bg-primary-foreground/20 text-primary-foreground">
                           ARM64
                         </span>
                       </Link>
@@ -351,7 +354,10 @@ export function DownloadPageContent({ content, locale }: DownloadPageContentProp
                   <Link href={downloadArm64} download>
                     <Download className="h-5 w-5" />
                     {content.cta.button}
-                    <span className="ml-2 text-xs px-2 py-0.5 rounded-full bg-primary-foreground/20 text-primary-foreground">
+                    <span className="ml-1 text-xs px-2 py-0.5 rounded-full bg-primary-foreground/20 text-primary-foreground">
+                      {content.platforms.android.recommended}
+                    </span>
+                    <span className="text-xs px-2 py-0.5 rounded-full bg-primary-foreground/20 text-primary-foreground">
                       ARM64
                     </span>
                   </Link>
