@@ -91,6 +91,10 @@
         "href": "#pricing"
       },
       {
+        "name": "下载应用",
+        "href": "/zh/download"
+      },
+      {
         "name": "关于我们",
         "href": "/zh/about"
       }
@@ -110,7 +114,7 @@
         "product": {
           "features": "#features",
           "pricing": "#pricing",
-          "download": "https://user.xrista.net"
+          "download": "/zh/download"
         },
         "company": {
           "about": "/zh/about",
@@ -787,6 +791,108 @@
           "description": "我们的支持团队全天候24/7为您解答任何问题或处理任何问题。",
           "primaryButton": "立即开始",
           "secondaryButton": "联系客服"
+        }
+      },
+      "download": {
+        "seo": {
+          "title": "下载推推App | 安卓安全VPN应用",
+          "description": "下载推推安卓版应用。军用级加密、极速连接、无缝中国连通性。几分钟即可开始使用。",
+          "keywords": [
+            "推推下载",
+            "vpn应用下载",
+            "安卓vpn",
+            "安全vpn应用",
+            "推推apk",
+            "中国vpn应用"
+          ]
+        },
+        "hero": {
+          "badge": "现已发布",
+          "title": "下载推推",
+          "description": "获取最强大的VPN应用，享受安全、无限制的网络访问。军用级加密与闪电般的速度完美结合。",
+          "downloadButton": "下载安卓版",
+          "version": "v0.0.56"
+        },
+        "platforms": {
+          "android": {
+            "name": "安卓",
+            "badge": "APK v0.0.56"
+          },
+          "ios": {
+            "name": "iOS",
+            "badge": "即将推出"
+          },
+          "windows": {
+            "name": "Windows",
+            "badge": "即将推出"
+          },
+          "macos": {
+            "name": "macOS",
+            "badge": "即将推出"
+          }
+        },
+        "sections": {
+          "overview": {
+            "title": "认识推推App",
+            "description": "一款功能强大的代理客户端，旨在帮助您自由、安全地访问互联网。支持多种代理协议、智能路由规则和流畅的用户体验。",
+            "features": [
+              "一键连接安全服务器",
+              "实时数据使用监控",
+              "智能路由优化性能",
+              "简洁直观的界面"
+            ]
+          },
+          "features": {
+            "title": "强大功能",
+            "description": "安全、无限制网络访问所需的一切",
+            "items": [
+              {
+                "title": "灵活套餐",
+                "description": "多种实惠的订阅选项，起步价仅2.99元。获得20GB流量，覆盖港日台新美德等地区。"
+              },
+              {
+                "title": "流量监控",
+                "description": "通过精美图表实时监控数据使用情况。分别追踪上传和下载，查看每日使用历史，不用担心意外超量。"
+              },
+              {
+                "title": "每日奖励",
+                "description": "每日签到赚取额外流量。每天打开应用即可获得100MB免费流量。连续签到解锁更多奖励。"
+              }
+            ]
+          },
+          "moreFeatures": {
+            "title": "更多精彩",
+            "items": [
+              {
+                "title": "推荐奖励",
+                "description": "推荐好友即可获得20%佣金。分享邀请码，看着余额不断增长。随时提现，无上限。"
+              },
+              {
+                "title": "订单管理",
+                "description": "在一处追踪所有购买和订阅。查看订单历史，管理续订，保持账户井井有条。"
+              },
+              {
+                "title": "全面自定义",
+                "description": "配置连接的各个方面。在一处管理账户设置、钱包余额、网络偏好和应用行为。"
+              }
+            ]
+          },
+          "support": {
+            "title": "全天候支持",
+            "description": "需要帮助？我们的支持团队随时准备为您解答任何问题或处理任何疑难。",
+            "features": [
+              "直接在应用内创建工单",
+              "追踪工单状态和历史",
+              "获得真人客服的回复",
+              "高级用户享受优先支持"
+            ]
+          }
+        },
+        "cta": {
+          "title": "准备好开始了吗？",
+          "description": "立即下载推推，体验安全、无限制的网络访问。",
+          "button": "立即下载",
+          "note": "无需信用卡即可开始"
         }
       }
     }

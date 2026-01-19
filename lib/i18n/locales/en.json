@@ -91,6 +91,10 @@
         "href": "#pricing"
       },
       {
+        "name": "Download",
+        "href": "/en/download"
+      },
+      {
         "name": "About",
         "href": "/en/about"
       }
@@ -110,7 +114,7 @@
         "product": {
           "features": "#features",
           "pricing": "#pricing",
-          "download": "https://user.xrista.net"
+          "download": "/en/download"
         },
         "company": {
           "about": "/en/about",
@@ -787,6 +791,108 @@
           "description": "Our support team is available 24/7 to help you with any questions or issues.",
           "primaryButton": "Get Started",
           "secondaryButton": "Contact Support"
+        }
+      },
+      "download": {
+        "seo": {
+          "title": "Download TUITUI App | Secure VPN for Android",
+          "description": "Download the TUITUI app for Android. Military-grade encryption, ultra-fast speeds, and seamless China connectivity. Get started in minutes.",
+          "keywords": [
+            "tuitui download",
+            "vpn app download",
+            "android vpn",
+            "secure vpn app",
+            "tuitui apk",
+            "china vpn app"
+          ]
+        },
+        "hero": {
+          "badge": "Available Now",
+          "title": "Download TUITUI",
+          "description": "Get the most powerful VPN app for secure, unrestricted internet access. Military-grade encryption meets lightning-fast performance.",
+          "downloadButton": "Download for Android",
+          "version": "v0.0.56"
+        },
+        "platforms": {
+          "android": {
+            "name": "Android",
+            "badge": "APK v0.0.56"
+          },
+          "ios": {
+            "name": "iOS",
+            "badge": "Coming Soon"
+          },
+          "windows": {
+            "name": "Windows",
+            "badge": "Coming Soon"
+          },
+          "macos": {
+            "name": "macOS",
+            "badge": "Coming Soon"
+          }
+        },
+        "sections": {
+          "overview": {
+            "title": "Meet the TUITUI App",
+            "description": "A powerful proxy client designed to help you access the internet freely and securely. Supporting multiple proxy protocols, smart routing rules, and a smooth user experience.",
+            "features": [
+              "One-tap connection to secure servers",
+              "Real-time data usage monitoring",
+              "Smart routing for optimal performance",
+              "Clean, intuitive interface"
+            ]
+          },
+          "features": {
+            "title": "Powerful Features",
+            "description": "Everything you need for secure, unrestricted internet access",
+            "items": [
+              {
+                "title": "Flexible Plans",
+                "description": "Choose from affordable subscription options starting at just 2.99 yuan. Get 20GB of data with coverage across Hong Kong, Japan, Taiwan, Singapore, US, and Germany."
+              },
+              {
+                "title": "Usage Tracking",
+                "description": "Monitor your data usage in real-time with beautiful charts. Track upload and download separately, view daily usage history, and never worry about unexpected overages."
+              },
+              {
+                "title": "Daily Rewards",
+                "description": "Check in daily to earn bonus data. Get 100MB free data every day just for opening the app. Consecutive check-ins unlock even more rewards."
+              }
+            ]
+          },
+          "moreFeatures": {
+            "title": "Even More to Love",
+            "items": [
+              {
+                "title": "Referral Program",
+                "description": "Earn 20% commission on every friend you refer. Share your invite code and watch your balance grow. Transfer earnings anytime with no limits."
+              },
+              {
+                "title": "Order Management",
+                "description": "Track all your purchases and subscriptions in one place. View order history, manage renewals, and keep your account organized."
+              },
+              {
+                "title": "Full Customization",
+                "description": "Configure every aspect of your connection. Manage account settings, wallet balance, network preferences, and app behavior all from one place."
+              }
+            ]
+          },
+          "support": {
+            "title": "24/7 Support",
+            "description": "Need help? Our support team is always ready to assist you with any questions or issues.",
+            "features": [
+              "Create support tickets directly in the app",
+              "Track ticket status and history",
+              "Get responses from real support agents",
+              "Priority support for premium users"
+            ]
+          }
+        },
+        "cta": {
+          "title": "Ready to Get Started?",
+          "description": "Download TUITUI now and experience secure, unrestricted internet access.",
+          "button": "Download Now",
+          "note": "No credit card required to start"
         }
       }
     }

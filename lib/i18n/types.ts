@@ -344,6 +344,72 @@ export interface FAQTranslations {
   }
 }
 
+export interface DownloadTranslations {
+  seo: {
+    title: string
+    description: string
+    keywords: string[]
+  }
+  hero: {
+    badge: string
+    title: string
+    description: string
+    downloadButton: string
+    version: string
+  }
+  platforms: {
+    android: {
+      name: string
+      badge: string
+    }
+    ios: {
+      name: string
+      badge: string
+    }
+    windows: {
+      name: string
+      badge: string
+    }
+    macos: {
+      name: string
+      badge: string
+    }
+  }
+  sections: {
+    overview: {
+      title: string
+      description: string
+      features: string[]
+    }
+    features: {
+      title: string
+      description: string
+      items: Array<{
+        title: string
+        description: string
+      }>
+    }
+    moreFeatures: {
+      title: string
+      items: Array<{
+        title: string
+        description: string
+      }>
+    }
+    support: {
+      title: string
+      description: string
+      features: string[]
+    }
+  }
+  cta: {
+    title: string
+    description: string
+    button: string
+    note: string
+  }
+}
+
 export interface PricingTranslations {
   heading: string
   description: string
@@ -422,6 +488,7 @@ export interface PageTranslations {
   privacy: PrivacyTranslations
   terms: TermsTranslations
   faq: FAQTranslations
+  download: DownloadTranslations
 }
 
 export interface Translations {

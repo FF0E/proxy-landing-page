@@ -33,6 +33,19 @@ export function Header() {
           <span className="text-xl font-semibold truncate bg-gradient-to-r from-foreground to-foreground bg-clip-text group-hover:from-primary group-hover:to-foreground transition-all duration-300">{config.site.name}</span>
         </Link>
 
+        {/* Desktop Navigation */}
+        <nav className="hidden lg:flex items-center gap-6 mx-8" aria-label="Main navigation">
+          {config.navigation.map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors duration-300"
+            >
+              {item.name}
+            </Link>
+          ))}
+        </nav>
+
         <div className="flex-1" />
 
         <div className="flex items-center gap-2 sm:gap-4 flex-shrink-0">
@@ -73,8 +86,21 @@ export function Header() {
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end" className="w-[280px] p-4 backdrop-blur-xl bg-background/95 border-border/50">
+                {/* Mobile Navigation Links */}
+                <nav className="mb-4 space-y-2" aria-label="Mobile navigation">
+                  {config.navigation.map((item) => (
+                    <Link
+                      key={item.href}
+                      href={item.href}
+                      className="block px-3 py-2 text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-primary/5 rounded-md transition-colors duration-300"
+                    >
+                      {item.name}
+                    </Link>
+                  ))}
+                </nav>
+
                 {/* Action Buttons - Side by Side */}
-                <div className="flex gap-2 mb-4">
+                <div className="flex gap-2 mb-4 pt-4 border-t border-border/50">
                   <Button
                     variant="outline"
                     size="sm"
