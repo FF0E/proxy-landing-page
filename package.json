@@ -14,6 +14,9 @@
   "author": "SecureNet Team",
   "private": true,
   "scripts": {
+    "sync-assets": "node scripts/sync-assets.cjs",
+    "predev": "npm run sync-assets",
+    "prebuild": "npm run sync-assets",
     "build": "next build",
     "dev": "next dev",
     "start": "next start",
