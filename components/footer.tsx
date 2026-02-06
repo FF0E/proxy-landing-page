@@ -4,6 +4,7 @@ import Link from "next/link"
 import { Shield, Heart } from "lucide-react"
 import { useTranslation, useConfig } from "@/lib/i18n/client"
 import { useDynamicLink } from "@/lib/hooks/use-dynamic-link"
+import { resolveDynamicHref } from "@/lib/url-builder"
 import { MotionWrapper } from "@/components/animations/motion-wrapper"
 import { useParams } from "next/navigation"
 
@@ -16,12 +17,10 @@ export function Footer() {
 
   // Helper to determine if we should use dynamic URL
   const getHref = (configUrl: string) => {
-    // If it's an internal link (starts with # or /), use as is
-    if (configUrl.startsWith('#') || configUrl.startsWith('/')) {
-      return configUrl
-    }
-    // If it's an external link, use dynamic URL
-    return dynamicUrl
+    const resolved = typeof locale === "string" && configUrl.startsWith("#")
+      ? `/${locale}${configUrl}`
+      : configUrl
+    return resolveDynamicHref(dynamicUrl, resolved)
   }
 
   return (
@@ -33,7 +32,7 @@ export function Footer() {
         <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-5 lg:gap-12">
           {/* Brand Section */}
           <MotionWrapper animation="fade-up" className="sm:col-span-2 md:col-span-1 lg:col-span-1">
-            <Link href="/" className="flex items-center gap-2 group w-fit">
+            <Link href={`/${locale}`} className="flex items-center gap-2 group w-fit">
               <div className="relative">
                 <div className="absolute inset-0 bg-primary/20 rounded-full blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <Shield className="h-6 w-6 relative transition-transform duration-300 group-hover:scale-110" />

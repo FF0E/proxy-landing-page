@@ -4,6 +4,8 @@ import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { getServerConfig, getServerTranslations } from "@/lib/i18n/server"
 import type { Locale } from "@/lib/i18n/config"
+import { getCurrentDomain } from "@/lib/domain"
+import { buildDynamicUrl, getFallbackUrl, resolveDynamicHref } from "@/lib/url-builder"
 import { HelpCircle, ArrowLeft, ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import {
@@ -21,12 +23,16 @@ export async function generateMetadata({
     const resolvedParams = await params
     const locale = resolvedParams.locale as Locale
 
-    const [config, translations] = await Promise.all([
+    const [config, translations, domain] = await Promise.all([
         getServerConfig(locale),
         getServerTranslations(locale),
+        getCurrentDomain(),
     ])
 
     const faq = translations.pages.faq
+    const dynamicBase = buildDynamicUrl(domain, getFallbackUrl())
+    const signupLink = resolveDynamicHref(dynamicBase, config.links.signup)
+    const contactLink = resolveDynamicHref(dynamicBase, config.links.contact)
     const canonical = new URL(`/${locale}/faq`, config.site.url).toString()
 
     return {
@@ -60,12 +66,16 @@ export default async function FAQPage({
     const resolvedParams = await params
     const locale = resolvedParams.locale as Locale
 
-    const [config, translations] = await Promise.all([
+    const [config, translations, domain] = await Promise.all([
         getServerConfig(locale),
         getServerTranslations(locale),
+        getCurrentDomain(),
     ])
 
     const faq = translations.pages.faq
+    const dynamicBase = buildDynamicUrl(domain, getFallbackUrl())
+    const signupLink = resolveDynamicHref(dynamicBase, config.links.signup)
+    const contactLink = resolveDynamicHref(dynamicBase, config.links.contact)
 
     return (
         <main className="min-h-screen bg-background">
@@ -119,13 +129,13 @@ export default async function FAQPage({
                         <p className="text-muted-foreground mb-6 max-w-lg mx-auto">{faq.cta.description}</p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Button asChild size="lg">
-                                <a href={config.links.signup} className="flex items-center gap-2">
+                                <a href={signupLink} className="flex items-center gap-2">
                                     {faq.cta.primaryButton}
                                     <ArrowRight className="h-4 w-4" />
                                 </a>
                             </Button>
                             <Button variant="outline" asChild size="lg">
-                                <a href={config.links.contact}>{faq.cta.secondaryButton}</a>
+                                <a href={contactLink}>{faq.cta.secondaryButton}</a>
                             </Button>
                         </div>
                     </section>

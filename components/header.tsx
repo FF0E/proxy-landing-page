@@ -14,15 +14,20 @@ import {
 } from "@/components/ui/dropdown-menu"
 
 export function Header() {
-  const { t } = useTranslation('common')
+  const { t, locale } = useTranslation('common')
   const config = useConfig()
   const dynamicUrl = useDynamicLink()
+
+  const navHref = (href: string) => {
+    if (href.startsWith("#")) return `/${locale}${href}`
+    return href
+  }
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 border-b border-border/50 bg-background/60 backdrop-blur-xl transition-all duration-300">
       <div className="container mx-auto flex h-16 items-center justify-between px-4 min-w-0">
         <Link
-          href="/"
+          href={`/${locale}`}
           className="flex items-center gap-2 flex-shrink-0 group"
           aria-label={`${config.site.name} homepage`}
         >
@@ -38,7 +43,7 @@ export function Header() {
           {config.navigation.map((item) => (
             <Link
               key={item.href}
-              href={item.href}
+              href={navHref(item.href)}
               className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors duration-300"
             >
               {item.name}
@@ -91,7 +96,7 @@ export function Header() {
                   {config.navigation.map((item) => (
                     <Link
                       key={item.href}
-                      href={item.href}
+                      href={navHref(item.href)}
                       className="block px-3 py-2 text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-primary/5 rounded-md transition-colors duration-300"
                     >
                       {item.name}

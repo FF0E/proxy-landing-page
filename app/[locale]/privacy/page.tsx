@@ -4,6 +4,8 @@ import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { getServerConfig, getServerTranslations } from "@/lib/i18n/server"
 import type { Locale } from "@/lib/i18n/config"
+import { getCurrentDomain } from "@/lib/domain"
+import { buildDynamicUrl, getFallbackUrl, resolveDynamicHref } from "@/lib/url-builder"
 import { Shield, ArrowLeft } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
@@ -15,12 +17,15 @@ export async function generateMetadata({
     const resolvedParams = await params
     const locale = resolvedParams.locale as Locale
 
-    const [config, translations] = await Promise.all([
+    const [config, translations, domain] = await Promise.all([
         getServerConfig(locale),
         getServerTranslations(locale),
+        getCurrentDomain(),
     ])
 
     const privacy = translations.pages.privacy
+    const dynamicBase = buildDynamicUrl(domain, getFallbackUrl())
+    const contactLink = resolveDynamicHref(dynamicBase, config.links.contact)
     const canonical = new URL(`/${locale}/privacy`, config.site.url).toString()
 
     return {
@@ -54,12 +59,15 @@ export default async function PrivacyPage({
     const resolvedParams = await params
     const locale = resolvedParams.locale as Locale
 
-    const [config, translations] = await Promise.all([
+    const [config, translations, domain] = await Promise.all([
         getServerConfig(locale),
         getServerTranslations(locale),
+        getCurrentDomain(),
     ])
 
     const privacy = translations.pages.privacy
+    const dynamicBase = buildDynamicUrl(domain, getFallbackUrl())
+    const contactLink = resolveDynamicHref(dynamicBase, config.links.contact)
 
     return (
         <main className="min-h-screen bg-background">
@@ -107,7 +115,7 @@ export default async function PrivacyPage({
                             <h2 className="text-xl font-semibold mb-4">{privacy.contact.title}</h2>
                             <p className="text-muted-foreground mb-4">{privacy.contact.description}</p>
                             <Button asChild>
-                                <a href={config.links.contact}>{privacy.contact.button}</a>
+                                <a href={contactLink}>{privacy.contact.button}</a>
                             </Button>
                         </section>
                     </div>

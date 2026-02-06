@@ -2,6 +2,8 @@ import type { Metadata } from "next"
 import { AboutPageContent } from "@/components/sections/about/about-page-content"
 import { getServerConfig, getServerTranslations } from "@/lib/i18n/server"
 import type { Locale } from "@/lib/i18n/config"
+import { getCurrentDomain } from "@/lib/domain"
+import { buildDynamicUrl, getFallbackUrl, resolveDynamicHref } from "@/lib/url-builder"
 
 export async function generateMetadata({
     params,
@@ -50,17 +52,22 @@ export default async function AboutPage({
     const resolvedParams = await params
     const locale = resolvedParams.locale as Locale
 
-    const [config, translations] = await Promise.all([
+    const [config, translations, domain] = await Promise.all([
         getServerConfig(locale),
         getServerTranslations(locale),
+        getCurrentDomain(),
     ])
+
+    const dynamicBase = buildDynamicUrl(domain, getFallbackUrl())
+    const signupLink = resolveDynamicHref(dynamicBase, config.links.signup)
+    const contactLink = resolveDynamicHref(dynamicBase, config.links.contact)
 
     return (
         <main className="min-h-screen bg-background">
             <AboutPageContent
                 content={translations.pages.about}
-                signupLink={config.links.signup}
-                contactLink={config.links.contact}
+                signupLink={signupLink}
+                contactLink={contactLink}
                 siteName={config.site.name}
                 siteUrl={config.site.url}
                 locale={locale}

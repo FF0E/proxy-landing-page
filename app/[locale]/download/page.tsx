@@ -60,7 +60,10 @@ export default async function DownloadPage({
   const resolvedParams = await params
   const locale = resolvedParams.locale as Locale
 
-  const translations = await getServerTranslations(locale)
+  const [translations, config] = await Promise.all([
+    getServerTranslations(locale),
+    getServerConfig(locale),
+  ])
 
   return (
     <main className="relative min-h-screen overflow-hidden bg-background">
@@ -68,6 +71,10 @@ export default async function DownloadPage({
       <DownloadPageContent
         content={translations.pages.download}
         locale={locale}
+        authLinks={{
+          signup: config.links.signup,
+          login: config.links.login,
+        }}
       />
       <Footer />
     </main>

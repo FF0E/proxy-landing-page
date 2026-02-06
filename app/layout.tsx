@@ -1,5 +1,6 @@
 import type React from "react"
 import type { Metadata } from "next"
+import { cookies } from "next/headers"
 import { Geist, Geist_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import { ThemeProvider } from "@/components/theme-provider"
@@ -7,6 +8,7 @@ import { ErrorBoundary } from "@/components/error-boundary"
 import { DomainProvider } from "@/lib/domain-context"
 import { getCurrentDomain } from "@/lib/domain"
 import { siteConfig } from "@/lib/config"
+import { defaultLocale, locales, type Locale } from "@/lib/i18n/config"
 import "./globals.css"
 
 const geist = Geist({ subsets: ["latin"] })
@@ -97,10 +99,13 @@ export default async function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  const cookieStore = await cookies()
+  const cookieLocale = cookieStore.get("locale")?.value as Locale | undefined
+  const lang = locales.includes(cookieLocale as Locale) ? (cookieLocale as Locale) : defaultLocale
   const domain = await getCurrentDomain()
 
   return (
-    <html lang="zh" suppressHydrationWarning>
+    <html lang={lang} suppressHydrationWarning>
       <body className={`${geist.className} font-sans antialiased`}>
         <ErrorBoundary>
           <ThemeProvider
