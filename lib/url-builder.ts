@@ -22,6 +22,44 @@ export function buildDynamicUrl(
 }
 
 /**
+ * Resolves a dynamic href by applying the source URL's path, query, and hash
+ * onto the provided dynamic base URL.
+ * Internal anchors/paths and non-http(s) schemes are returned unchanged.
+ * @param dynamicBase - The base dynamic URL (e.g., "https://user.example.com")
+ * @param sourceUrl - The configured URL to copy path/query/hash from
+ */
+export function resolveDynamicHref(dynamicBase: string, sourceUrl: string): string {
+  const trimmed = sourceUrl.trim();
+
+  if (!trimmed) {
+    return dynamicBase;
+  }
+
+  // Keep internal navigation as-is
+  if (trimmed.startsWith('#') || trimmed.startsWith('/')) {
+    return trimmed;
+  }
+
+  // Preserve non-http(s) schemes like mailto:, tel:, etc.
+  if (/^[a-zA-Z][a-zA-Z0-9+.-]*:/.test(trimmed) && !/^https?:/i.test(trimmed)) {
+    return trimmed;
+  }
+
+  try {
+    const base = new URL(dynamicBase);
+    const source = new URL(ensureProtocol(trimmed));
+
+    base.pathname = source.pathname;
+    base.search = source.search;
+    base.hash = source.hash;
+
+    return base.toString();
+  } catch {
+    return dynamicBase;
+  }
+}
+
+/**
  * Ensures a URL has the https:// protocol
  * @param url - The URL to process
  * @returns The URL with https:// protocol

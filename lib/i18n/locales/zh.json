@@ -194,8 +194,8 @@
           "connections_pro": "支持10台设备同时在线",
           "connections_enterprise": "支持无限台设备",
           "servers": "50+个精选服务器位置",
-          "servers_pro": "150+个全球服务器位置",
-          "servers_enterprise": "150+个全球服务器位置",
+          "servers_pro": "30+个全球服务器位置",
+          "servers_enterprise": "30+个全球服务器位置",
           "encryption": "基础加密保护(AES-128)",
           "encryption_pro": "军用级加密防护(AES-256)",
           "encryption_enterprise": "军用级加密防护(AES-256)",
@@ -257,7 +257,7 @@
       "stats": {
         "items": {
           "servers": {
-            "value": "150+",
+            "value": "30+",
             "label": "全球服务器",
             "description": "覆盖全球60个国家"
           },
@@ -813,12 +813,19 @@
           "downloadButton": "下载安卓版",
           "version": "v0.0.56"
         },
+        "notice": {
+          "title": "苹果用户指引",
+          "description": "由于开发周期原因，iOS 版本暂未上架。请先注册账户并登录，在账户内查看临时 Apple 商店 ID 教程后使用。",
+          "signupLabel": "注册账户",
+          "loginLabel": "登录查看教程"
+        },
         "platforms": {
           "android": {
             "name": "安卓",
             "badge": "APK v0.0.56",
             "recommended": "推荐",
             "arm64Hint": "推荐大多数设备使用（现代手机和平板）",
+            "x86Label": "安卓兼容版本（x86）",
             "x86Hint": "仅在ARM64版本安装失败时使用"
           },
           "ios": {
@@ -827,7 +834,8 @@
           },
           "windows": {
             "name": "Windows",
-            "badge": "即将推出"
+            "badge": "EXE",
+            "downloadButton": "下载 Windows 版"
           },
           "macos": {
             "name": "macOS",

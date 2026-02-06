@@ -194,8 +194,8 @@
           "connections_pro": "10 simultaneous connections",
           "connections_enterprise": "Unlimited connections",
           "servers": "50+ server locations",
-          "servers_pro": "150+ server locations",
-          "servers_enterprise": "150+ server locations",
+          "servers_pro": "30+ server locations",
+          "servers_enterprise": "30+ server locations",
           "encryption": "Basic encryption (AES-128)",
           "encryption_pro": "Military-grade encryption (AES-256)",
           "encryption_enterprise": "Military-grade encryption (AES-256)",
@@ -257,7 +257,7 @@
       "stats": {
         "items": {
           "servers": {
-            "value": "150+",
+            "value": "30+",
             "label": "Global Servers",
             "description": "Across 60 countries"
           },
@@ -813,12 +813,19 @@
           "downloadButton": "Download for Android",
           "version": "v0.0.56"
         },
+        "notice": {
+          "title": "iOS Users Guide",
+          "description": "Due to the development cycle, the iOS build is not yet available. Please create an account and log in to view the temporary Apple Store ID tutorial.",
+          "signupLabel": "Create Account",
+          "loginLabel": "Log In to View Guide"
+        },
         "platforms": {
           "android": {
             "name": "Android",
             "badge": "APK v0.0.56",
             "recommended": "Recommended",
             "arm64Hint": "Recommended for most devices (modern phones & tablets)",
+            "x86Label": "Android compatibility (x86)",
             "x86Hint": "Use only if ARM64 version fails to install"
           },
           "ios": {
@@ -827,7 +834,8 @@
           },
           "windows": {
             "name": "Windows",
-            "badge": "Coming Soon"
+            "badge": "EXE",
+            "downloadButton": "Download for Windows"
           },
           "macos": {
             "name": "macOS",

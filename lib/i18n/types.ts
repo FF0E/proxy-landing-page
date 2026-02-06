@@ -357,12 +357,19 @@ export interface DownloadTranslations {
     downloadButton: string
     version: string
   }
+  notice: {
+    title: string
+    description: string
+    signupLabel: string
+    loginLabel: string
+  }
   platforms: {
     android: {
       name: string
       badge: string
       recommended: string
       arm64Hint: string
+      x86Label: string
       x86Hint: string
     }
     ios: {
@@ -372,6 +379,7 @@ export interface DownloadTranslations {
     windows: {
       name: string
       badge: string
+      downloadButton: string
     }
     macos: {
       name: string

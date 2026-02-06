@@ -22,6 +22,9 @@ yarn-error.log*
 # vercel
 .vercel
 
+# staging assets (not served; safe to delete)
+un-use/
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
